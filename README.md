@@ -1,4 +1,12 @@
-# Webplayer Lite
+# Mycrocast Webplayer Documentation
+
+This document serves as a guide on how to embed the various webplayer types of mycrocast. We also provide some examples on how to customize the players for your organization's needs and in which ways you can do so.
+
+# Table of contents
+1. [Webplayer Lite](#lite-player)
+2. [Floating-Button Webplayer](#floating)
+
+# Webplayer Lite <a name="lite-player"></a>
 &nbsp;
 ## Embed Script
 
@@ -36,8 +44,8 @@ CSS variables can only be used to adjust the colors of the web player. Standard 
 | mcc-player-overlay-font-color | Changes the font color within the delay menu, including all buttons for setting the delay. |
 | mcc-player-button-disabled-color | Some buttons can be deactivated sometimes. By default, the color is set to grey, which can be changed using this variable. |
 | mcc-player-delay-bar-background | Adjusts the background color of the delay bar in the delay menu |
-| mcc-player-delay-bar-buffer | Adjusts the color of the indicator in the delay bar, which shows the currently buffered audio data. Also affects the color of the "Live" button if no delay is set. |
-| mcc-player-delay-bar-current | Adjusts the color of the indicator in the delay bar, which represents the currently set delay. |
+| mcc-player-delay-bar-buffer | Adjusts the color of the indicator in the delay bar that shows the currently buffered audio data. Also affects the color of the "Live" button if no delay is set. |
+| mcc-player-delay-bar-current | Adjusts the color of the indicator in the delay bar that represents the currently set delay. |
 
 The CSS style of the website should embed the variables similar to the following example:
 
@@ -399,3 +407,62 @@ Adjusts the indicator in the delay bar that shows how much audio data is current
 #### mcc-delay-bar-current
 
 Adjusts the indicator in the delay bar that shows how long the current delay is. Behaves similarly to mcc-delay-bar-wrapper
+
+# Floating-Button Webplayer <a name="floating"></a>
+&nbsp;
+## Embed Script
+
+The following script needs to be copied and inserted anywhere within the ```<body>``` of your website.
+
+```
+<script
+	id="mycrocast_base"
+	src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js"
+	player=”FLOATING_BUTTON_PLAYER”>
+</script>
+```
+&nbsp;
+
+## Embed Webplayer
+
+The following HTML element is inserted where the player should be visible. The token attribute needs to be replaced with your club's token found in the mycrocast club admin platform.
+
+```
+<mycrocast-lite-player
+	token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
+</mycrocast-lite-player>
+```
+&nbsp;
+
+## Adjust Player Elements
+You can make adjustments to parts of the webplayer using CSS. The styles can be added via a ```<style>``` tag in the ```<body>```, or via an external stylesheet that is imported in the ```<head>```.
+
+### Adjustment of colors using CSS variables
+
+CSS variables can only be used to adjust the colors of the web player. Standard CSS colors, but also hexadecimal codes and RGBA colors can be used as colors. The following variables are defined:
+
+|Variable|Explanation|
+|----|----|
+| mcc-player-background-color | Adjusts the background color of the button and the content view. |
+| mcc-player-font-color | Adjusts the font color of the player, including all icons. Also sets the color of the border of the content view. |
+| mcc-player-delay-bar-background | Adjusts the background color of the delay bar in the delay menu |
+| mcc-player-delay-bar-buffer | Adjusts the color of the indicator in the delay bar that shows the currently buffered audio data. Also affects the color of the "Live" button. |
+| mcc-player-delay-bar-current | Adjusts the color of the indicator in the delay bar that represents the currently set delay. |
+
+The CSS style of the website should embed the variables similar to the following example:
+
+```
+mycrocast-lite-player {
+    --mcc-player-background-color: red;
+    --mcc-player-font-color: white;
+	
+    --mcc-player-delay-background: darkblue;
+    --mcc-player-delay-buffer: blue;
+    --mcc-player-delay-current: lightblue;
+}
+
+```  
+
+Not all variables need to be defined.
+
+&nbsp;
