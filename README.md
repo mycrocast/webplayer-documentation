@@ -173,7 +173,7 @@ mcc-lite-player::part(mcc-listener-info) {
 }
 ```
 
-Result:
+Result (not hiding the element):
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b1568669-da71-4793-938c-67052b6ff2e7)
 &nbsp;
@@ -185,7 +185,7 @@ Adjusts the properties of the other stream information (language and the stream 
 Example:
 ```
 mcc-lite-player::part(mcc-stream-info) {
-    color: deepskyblue;
+    color: #ff2e2e;
 }
 ```
 
@@ -202,15 +202,15 @@ Example:
 
 ```
 mcc-lite-player::part(mcc-delay-overlay-button) {
-    color: deepskyblue;
+    color: #ff2e2e;
 }
 ```
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/HSxctzcOvASyoPAmnsSCbEfJa7pswMfiiWGWVVhyG7NV-0B8VSO4I7R-L372JhIKUIqYodBqn2GNTyopI5sQQAKYMQyPvZS3sNi_YX_cT1qRFnnIzNgIlU9aZAiF0Kwuydt-BGhhKmDVXmr7WAIBb54)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c1a8c938-83f9-436e-9f89-26c6268da37a)
 &nbsp;
+
 #### mcc-delay-overlay-button-disabled
 
 Just like the play/pause button, the button for opening the delay menu is disabled in certain scenarios as well. The classes are exchanged here too, which is why all the properties set in mcc-delay-overlay-button must be adopted in mcc-delay-overlay-button-disabled. Only the color should also be changed here to give the listener visual feedback that the button is disabled.
@@ -218,15 +218,15 @@ Just like the play/pause button, the button for opening the delay menu is disabl
 Example:
 ```
 mcc-lite-player::part(mcc-delay-overlay-button-disabled) {
-    color: #00506b;
+    color: #bb2222;
 }
 ```
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/RbKbth3n5E6V4R8E2h4673KXMJoKnARjw5ZGPkDWt_RHf1OFMOcWU6hNUt8lFN96H1jdUiLa2yTa70xBCxkQAeBjwkjpNrmW89amkyDU1LQNv-kiycg6xB7NjCyghUiTE7McnDH6kex_NCJ6ZBw-H2s)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/86fb1786-b9fa-4a23-99e6-067195b98696)
 &nbsp;
+
 #### mcc-spot-item
 
 When an advertisement is played, some elements in the player disappear and the user is shown the text "Advertisement - to be continued shortly". mcc-spot-item affects the element that contains this text.
