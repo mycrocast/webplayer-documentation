@@ -17,7 +17,7 @@ The following script needs to be copied and inserted anywhere within the ```<bod
 	src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=”LITE_PLAYER”>
 </script>
 ```
-  &nbsp;
+&nbsp;
   
 ## Embed Webplayer
 
@@ -100,7 +100,7 @@ mcc-lite-player::part(mcc-lite-player-viewport) {
 
 Result:
 
-![](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c09ac585-654e-4be0-adaf-d0a9ddadf76f)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a6aca57f-691a-4254-bd16-a56916ec8997)
 &nbsp;
 
 #### mcc-play-pause-controls
@@ -118,7 +118,7 @@ mcc-lite-player::part(mcc-play-pause-controls) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b5e09154-437a-4094-8bcd-31114bb3ec95)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b7edaf86-ea70-493b-ac03-223957387508)
 &nbsp;
 
 #### mcc-play-pause-controls-disabled
@@ -139,7 +139,7 @@ mcc-lite-player::part(mcc-play-pause-controls-disabled) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/984c7c52-d67f-4938-b72e-af6485e0db6e)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/af211629-becf-407e-be55-10a00e937de3)
 &nbsp;
 
 #### mcc-stream-title
@@ -234,11 +234,15 @@ When an advertisement is played, some elements in the player disappear and the u
 Example:
 ```
 mycrocast-lite-player::part(mcc-spot-item) {
-    color: deepskyblue;
+    color: #ff2e2e;
 }
 ```
 
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ba2158d0-1d7f-4988-ae27-74c2bad7f7cb)
 &nbsp;
+
 #### mcc-message-info
 
 The listener is occasionally shown status messages while listening, e.g. when the streamer is muted. The class customizes this status message.
@@ -246,16 +250,16 @@ The listener is occasionally shown status messages while listening, e.g. when th
 Example:
 ```
 mycrocast-lite-player::part(mcc-message-info) {
-    color: white;
-    background-color: deepskyblue;
+    color: #ff2e2e;
+    background-color: white;
 }
 ```
   
 Result:
 
-![](https://lh7-us.googleusercontent.com/c10c8HDRZgPFeXE9QykDl58vh4EcScDz9lctBqm4aU4UhXxb_vN6BfPLomUMIyOvn2xafWmwgBzsMt4e1EhsR17h594JIw2e7i_T-MnRpOU1V2gL6-HpTojcWdEO6EJB_qLBA3eqBM2jTN3D_P-JklM)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/33b496e7-4cda-4a8b-840d-7b804adb222f)
 &nbsp;
+
 #### mcc-message-danger
 
 Displayed if there is a problem with the transmission. Behaves like mcc-message-info.
