@@ -89,16 +89,15 @@ Example:
 
 ```
 mcc-lite-player::part(mcc-lite-player-viewport) {
-    background-color: darkgreen;
+    background-color: #555555;
     height: 200px;
     border-radius: 0;
-    width: 500px;
+    width: 600px;
 }
 ```
 
 Result:
-
-![](https://lh7-us.googleusercontent.com/Wywjpbz1twa68h9W_blcNYgP9GK6yFyqipdGYZmwJXo4nEhisK_99ME2cf7WmbJTHDE2D9IRdPhKJtPe1jvxhxUVEDJIFnMevwNOvTt-BoRIzWoWn5_4JAuXnULsOncArOJ3WilIApIIVrRXOIGK9n8)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c09ac585-654e-4be0-adaf-d0a9ddadf76f)
 
 &nbsp;
 #### mcc-play-pause-controls
