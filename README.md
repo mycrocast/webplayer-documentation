@@ -156,7 +156,7 @@ mcc-lite-player::part(mcc-stream-title) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/df6c5be9-720a-4eb0-8d52-9e26272e9b4f)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/f8a65bff-4313-4091-a132-58985432f688)
 &nbsp;
 
 #### mcc-listener-info
@@ -175,7 +175,7 @@ mcc-lite-player::part(mcc-listener-info) {
 
 Result (not hiding the element):
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b1568669-da71-4793-938c-67052b6ff2e7)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/fa353145-f98b-4f00-819f-c9806106a799)
 &nbsp;
 
 #### mcc-stream-info
@@ -191,7 +191,7 @@ mcc-lite-player::part(mcc-stream-info) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5a2f4a71-019e-4fcf-b320-171beaddf224)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/985e0ecf-c5fc-4a14-b199-d302407addae)
 &nbsp;
 
 #### mcc-delay-overlay-button
