@@ -97,7 +97,8 @@ mcc-lite-player::part(mcc-lite-player-viewport) {
 ```
 
 Result:
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c09ac585-654e-4be0-adaf-d0a9ddadf76f)
+
+![](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c09ac585-654e-4be0-adaf-d0a9ddadf76f)
 
 &nbsp;
 #### mcc-play-pause-controls
