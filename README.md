@@ -18,6 +18,7 @@ The following script needs to be copied and inserted anywhere within the ```<bod
 </script>
 ```
   &nbsp;
+  
 ## Embed Webplayer
 
 The following HTML element is inserted where the player should be visible. The token attribute needs to be replaced with your club's token found in the mycrocast club admin platform.
@@ -28,6 +29,7 @@ The following HTML element is inserted where the player should be visible. The t
 </mycrocast-lite-player>
 ```
 &nbsp;
+
 ## Adjust Player Elements
 You can make adjustments to parts of the webplayer using CSS. The styles can be added via a ```<style>``` tag in the ```<body>```, or via an external stylesheet that is imported in the ```<head>```.
 
@@ -66,8 +68,8 @@ mycrocast-lite-player {
 ```  
 
 Not all variables need to be defined.
-
 &nbsp;
+
 ### Adjustments to other properties
 
 A CSS class or a CSS shadow part can be overwritten as follows:
@@ -79,8 +81,8 @@ mcc-lite-player::part(mcc-lite-player-viewport) {
 ```
   
 Here, "mcc-lite-player-viewport" can be replaced by one of the class names defined on the following pages in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
-
 &nbsp;
+
 #### mcc-lite-player-viewport
 
 Can be used to adjust the height, width, color and shape of the player.
@@ -99,8 +101,8 @@ mcc-lite-player::part(mcc-lite-player-viewport) {
 Result:
 
 ![](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c09ac585-654e-4be0-adaf-d0a9ddadf76f)
-
 &nbsp;
+
 #### mcc-play-pause-controls
 
 Affects the play/pause icon on the left-hand side of the player. 
@@ -127,19 +129,19 @@ Example:
 
 ```
 mcc-lite-player::part(mcc-play-pause-controls-disabled) {
-    /*different color to show that button is deactivated*/
-    color: #00506b;
+    /*darker color to show that button is deactivated*/
+    color: #bb2222;
 	
     /*all other properties should be adopted!*/
-    padding: 0 3em;
+    padding: 0 2em;
 }
 ```
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/Ybh2MQ9WPrh6xZ3F5nnoNNsE2PhZe86lKk-th_-kR-h7RFHb5bed7rv_XgTKaM6lfHL6ATnVL7CSjGSqF18RrvWMVa9kIXq_m0Y6sbAQEdB9L3zSh_0FUq48hRBW-5yHITUbl1_YLMDgWKoeRDivZcY)
-
+![](https://github.com/mycrocast/webplayer-documentation/assets/82024455/d212d2d0-a686-4759-9a73-39a80782c7fe)
 &nbsp;
+
 #### mcc-stream-title
 
 Adjusts the properties of the stream title shown besides the play/pause-button.
@@ -148,11 +150,15 @@ Example:
 
 ```
 mcc-lite-player::part(mcc-stream-title) {
-    color: deepskyblue;
+    color: #ff2e2e;
 }
 ```
 
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/df6c5be9-720a-4eb0-8d52-9e26272e9b4f)
 &nbsp;
+
 #### mcc-listener-info
 
 Adjusts the properties of the element containing the number of listeners. Affects both the icon and the displayed number. Can also be hidden with display: none if required.
@@ -160,14 +166,18 @@ Adjusts the properties of the element containing the number of listeners. Affect
 Example:
 ```
 mcc-lite-player::part(mcc-listener-info) {
-    color: deepskyblue;
+    color: #ff2e2e;
  
     /*optional: can be hidden using the following code*/
     display: none;
 }
 ```
-  
+
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b1568669-da71-4793-938c-67052b6ff2e7)
 &nbsp;
+
 #### mcc-stream-info
 
 Adjusts the properties of the other stream information (language and the stream start time).
@@ -179,7 +189,11 @@ mcc-lite-player::part(mcc-stream-info) {
 }
 ```
 
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5a2f4a71-019e-4fcf-b320-171beaddf224)
 &nbsp;
+
 #### mcc-delay-overlay-button
 
 Affects the icon on the right-hand side of the player that opens the synchronization menu.
