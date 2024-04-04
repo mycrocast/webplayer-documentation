@@ -139,7 +139,7 @@ mcc-lite-player::part(mcc-play-pause-controls-disabled) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/af211629-becf-407e-be55-10a00e937de3)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a89e2eba-6cda-40dc-9622-80cdeffab4b4)
 &nbsp;
 
 #### mcc-stream-title
