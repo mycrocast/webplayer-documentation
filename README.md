@@ -156,7 +156,7 @@ mcc-lite-player::part(mcc-stream-title) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/f8a65bff-4313-4091-a132-58985432f688)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/17ffc0a0-3c2d-47df-989d-8968099b050c)
 &nbsp;
 
 #### mcc-listener-info
@@ -173,9 +173,9 @@ mcc-lite-player::part(mcc-listener-info) {
 }
 ```
 
-Result (not hiding the element):
+Result (without hiding the element):
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/fa353145-f98b-4f00-819f-c9806106a799)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5cf30be0-2290-4645-a9bd-27669ea78eea)
 &nbsp;
 
 #### mcc-stream-info
@@ -191,7 +191,7 @@ mcc-lite-player::part(mcc-stream-info) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/985e0ecf-c5fc-4a14-b199-d302407addae)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/897be569-e9ac-41df-9dd6-9a0cad53bc95)
 &nbsp;
 
 #### mcc-delay-overlay-button
@@ -208,7 +208,7 @@ mcc-lite-player::part(mcc-delay-overlay-button) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c1a8c938-83f9-436e-9f89-26c6268da37a)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ad22090c-ce4e-4d15-a406-c38cfbd23d9c)
 &nbsp;
 
 #### mcc-delay-overlay-button-disabled
@@ -224,7 +224,7 @@ mcc-lite-player::part(mcc-delay-overlay-button-disabled) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/86fb1786-b9fa-4a23-99e6-067195b98696)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/406a2a52-7967-4d05-8fe2-35fd260ea6db)
 &nbsp;
 
 #### mcc-spot-item
@@ -240,7 +240,7 @@ mycrocast-lite-player::part(mcc-spot-item) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ba2158d0-1d7f-4988-ae27-74c2bad7f7cb)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c32f8ff4-02b2-4072-8157-99669302e0e3)
 &nbsp;
 
 #### mcc-message-info
@@ -257,7 +257,7 @@ mycrocast-lite-player::part(mcc-message-info) {
   
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/33b496e7-4cda-4a8b-840d-7b804adb222f)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2fbeacb5-aace-4c61-9b3c-458a55174b74)
 &nbsp;
 
 #### mcc-message-danger
@@ -274,9 +274,9 @@ mycrocast-lite-player::part(mcc-message-danger) {
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/hLhHK-64-1ssqLKbvyLEjtw17zNiWjtCMweAObgyIE1WDF-jf2Gnl3UKwd27ea49rgyo521abNci7TzmIwLgBroxv49LI3G_u3-tPC6ozTepYFpdpd6R1YPYUxho2FnQxCGzD8_-fGotdFvuRj2tO84)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/de0ac353-635d-4245-b84a-e0165487f268)
 &nbsp;
+
 #### mcc-stream-placeholder
 
 Customizes to the element that is displayed when no transmission is available.
@@ -284,15 +284,15 @@ Customizes to the element that is displayed when no transmission is available.
 Example:
 ```
 mycrocast-lite-player::part(mcc-stream-placeholder) {
-    color: deepskyblue;
+    color: #ff2e2e;
 }
 ```
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/oe16ms40X1DKJotyx6ke6gUrbqOAv_B_e6juKTzcW3XJa5vnrniHWPx92WLwFIy39ClkGM1b1valCEv-tsLHobXE3qC9UR3VkTV6-GDCKnGNDTEE8JSvQm6x8Hc4s-iU17mj85XTbCHb3uD75HaLfS8)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0ab2f272-437a-4b20-b7e8-41f9da9a9c94)
 &nbsp;
+
 #### mcc-next-stream
 
 If several streams are available, a button is displayed at the bottom of the player which the listener can use to navigate between different streams.
@@ -300,15 +300,15 @@ If several streams are available, a button is displayed at the bottom of the pla
 Example:
 ```
 mycrocast-lite-player::part(mcc-next-stream) {
-    color: white;
+    color: #ff2e2e;
 }
 ```
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/UHY_T9c8c9lpmo8MiHc2OUw30bsyJY1ZVNlsaJP6x8xf_AoQ-4CwXtFh32nJpGRunW3uhtFUv_Ze8d4wG0ie7AyoAR3r7-Lf-KpRFvCQt_k8mptrGFgDJ6HWCkFzb09n5fMM7zGyVzZDAfZZJN0oeNw)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4534190b-87b2-4f52-b01c-8e0e6944508d)
 &nbsp;
+
 #### mcc-delay-overlay-wrapper
 
 Can be used to set the color, padding, and other properties of the delay overlay
