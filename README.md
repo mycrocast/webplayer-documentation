@@ -118,9 +118,9 @@ mcc-lite-player::part(mcc-play-pause-controls) {
 
 Result:
 
-![](https://github.com/mycrocast/webplayer-documentation/assets/82024455/bab0154a-d44b-4e1a-b155-766279a51a4c)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b5e09154-437a-4094-8bcd-31114bb3ec95)
 &nbsp;
+
 #### mcc-play-pause-controls-disabled
 
 If no live broadcast is available or advertisements are being played during an active broadcast, the play/pause button is deactivated and mcc-play-pause-controls is replaced by mcc-play-pause-controls-disabled. As the CSS class changes, all adjustments made for mcc-play-pause-controls must also be made for mcc-play-pause-controls-disabled! Only the color should be different to give the listener visual feedback that the button is disabled.
@@ -139,7 +139,7 @@ mcc-lite-player::part(mcc-play-pause-controls-disabled) {
 
 Result:
 
-![](https://github.com/mycrocast/webplayer-documentation/assets/82024455/d212d2d0-a686-4759-9a73-39a80782c7fe)
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/984c7c52-d67f-4938-b72e-af6485e0db6e)
 &nbsp;
 
 #### mcc-stream-title
