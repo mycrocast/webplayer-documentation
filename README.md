@@ -109,12 +109,13 @@ Example:
 
 ```
 mcc-lite-player::part(mcc-play-pause-controls) {
-    color: deepskyblue;
+    color: #ff2e2e;
     padding: 0 2em;
 }
 ```
 
 Result:
+
 ![](https://github.com/mycrocast/webplayer-documentation/assets/82024455/bab0154a-d44b-4e1a-b155-766279a51a4c)
 
 &nbsp;
