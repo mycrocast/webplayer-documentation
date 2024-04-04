@@ -110,13 +110,12 @@ Example:
 ```
 mcc-lite-player::part(mcc-play-pause-controls) {
     color: deepskyblue;
-    padding: 0 3em;
+    padding: 0 2em;
 }
 ```
 
 Result:
-
-![](https://lh7-us.googleusercontent.com/Mjq3CDpC_-x-3pasZFHui4qIHkm6pVROPVeNa4UFG16FW6VYEoyf5JJgVi5KKmgR5WwcKMKeEev5zCF9lWvn7JninHum0Deipz88z8uqNV4R5E_0auX6EqEeotKMQVUi03V4qTZwd4_-7ik-fgoDfBk)
+![](https://github.com/mycrocast/webplayer-documentation/assets/82024455/bab0154a-d44b-4e1a-b155-766279a51a4c)
 
 &nbsp;
 #### mcc-play-pause-controls-disabled
