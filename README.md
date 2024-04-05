@@ -328,11 +328,30 @@ Result:
 #### mcc-delay-play-pause-controls
 
 As the delay menu can have a different color, the play/pause button can also be different here. Can be customized like mcc-play-pause-controls.
+```
+mycrocast-lite-player::part(mcc-delay-play-pause-controls) {
+    color: #ff2e2e;
+}
+```
 
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ba4019a7-5b96-4244-aad9-50c9e3534a95)
 &nbsp;
+
 #### mcc-delay-play-pause-controls-disabled
 
 The play/pause button can be deactivated in the delay menu as well. Again, all properties of mcc-delay-play-pause-controls should be adopted and only the color should be adjusted as visual indication.
+
+Example:
+```
+mycrocast-lite-player::part(mcc-delay-play-pause-controls-disabled) {
+    color: #bb2222;
+}
+```
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2cb32568-d284-409e-bbe7-da268f0de713)
+
 
 &nbsp;
 #### mcc-delay-current
