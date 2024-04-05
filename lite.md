@@ -1,30 +1,6 @@
 # Webplayer Lite <a name="lite-player"></a>
 &nbsp;
 
-## Embed Script
-
-The following script needs to be copied and inserted anywhere within the ```<body>``` of your website.
-
-```
-<script
-	id="mycrocast_base"
-	src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js"
-	player=”LITE_PLAYER”>
-</script>
-```
-&nbsp;
-  
-## Embed Webplayer
-
-The following HTML element is inserted where the player should be visible. The token attribute needs to be replaced with your club's token found in the mycrocast club admin platform.
-
-```
-<mycrocast-lite-player
-	token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
-</mycrocast-lite-player>
-```
-&nbsp;
-
 ## Adjust Player Elements
 You can make adjustments to parts of the webplayer using CSS. The styles can be added via a ```<style>``` tag in the ```<body>```, or via an external stylesheet that is imported in the ```<head>```.
 
