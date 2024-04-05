@@ -89,7 +89,7 @@ The following HTML snippets show what the player tags need to look like. They ne
 ## Customizing your webplayer
 We provide means to customize the webplayer to your needs. Since the elements and classes are very specific to each player, we describe them individually on their own pages.
 
-1. [Webplayer Lite](https://mycrocast.github.io/webplayer-documentation/player/lite)
-2. [Floating-Button Webplayer](https://mycrocast.github.io/webplayer-documentation/player/floating)
+1. [Webplayer Lite](https://mycrocast.github.io/webplayer-documentation/lite)
+2. [Floating-Button Webplayer](https://mycrocast.github.io/webplayer-documentation/floating)
 
 
