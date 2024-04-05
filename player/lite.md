@@ -1,4 +1,6 @@
 # Webplayer Lite <a name="lite-player"></a>
+&nbsp;
+
 ## Embed Script
 
 The following script needs to be copied and inserted anywhere within the ```<body>``` of your website.
@@ -39,6 +41,8 @@ CSS variables can only be used to adjust the colors of the web player. Standard 
 | mcc-player-delay-bar-background | Adjusts the background color of the delay bar in the delay menu |
 | mcc-player-delay-bar-buffer | Adjusts the color of the indicator in the delay bar that shows the currently buffered audio data. Also affects the color of the "Live" button if no delay is set. |
 | mcc-player-delay-bar-current | Adjusts the color of the indicator in the delay bar that represents the currently set delay. |
+
+&nbsp;
 
 The CSS style of the website should embed the variables similar to the following example:
 
