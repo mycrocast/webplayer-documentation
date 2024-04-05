@@ -8,7 +8,8 @@ The following script needs to be copied and inserted anywhere within the ```<bod
 ```
 <script
 	id="mycrocast_base"
-	src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=”LITE_PLAYER”>
+	src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js"
+	player=”LITE_PLAYER”>
 </script>
 ```
 &nbsp;
