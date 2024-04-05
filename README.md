@@ -322,9 +322,9 @@ mycrocast-lite-player::part(mcc-delay-overlay-wrapper) {
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/CSqfpqi9fSJkOPoJZiX9SwsCVzcxcvzQoyZYmfHLN0ESIT0yY9Bd0OyqN5-zXQjjRXAJqzyTlcKasy-4qO1LZiBhlMYPbA1nME5JgZILzBgBcHJIXwoljZ4d7S-3cFTQbAtXS5i-vkXzURVTFlYkuKA)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e27a8c67-8c5f-4d38-aaaa-6338e75a8938)
 &nbsp;
+
 #### mcc-delay-play-pause-controls
 
 As the delay menu can have a different color, the play/pause button can also be different here. Can be customized like mcc-play-pause-controls.
