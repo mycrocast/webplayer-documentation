@@ -64,6 +64,7 @@ mycrocast-lite-player {
 ```  
 
 Not all variables need to be defined.
+
 &nbsp;
 
 ### Adjustments to other properties
