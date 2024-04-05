@@ -80,8 +80,14 @@ The following HTML snippets show what the player tags need to look like. They ne
 
 1. Log in with your club account.
 2. Navigate to the Settings->Webplayer tab on the left.
+   ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0c2bec14-54ff-4a1d-8518-dab3ba545850)
+
 3. On the top, select the "SDK" tab.
-4. The club token is on the right-hand side of the view. Click on the eye-icon to copy it to your clipboard.
+   ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/daaf54a1-09de-439c-9552-6d0ee1412bc3)
+
+4. The club token is on the right-hand side of the view. Click on the copy button to copy it to your clipboard.
+   ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4fb73e5d-d241-40aa-b3d6-ba797ee4a0e5)
+
 5. Go back to your player and replace the mycrocast token with your copied club's token.
 
 ## Customizing your webplayer
