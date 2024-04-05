@@ -14,12 +14,19 @@ We provide three different players you can choose from.
 
 ### Webplayer Lite
 
-// TODO add image
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/f5157569-2d69-4f74-89ee-d921b4b8d17d)
+&nbsp;
 
 ### Webplayer Floating-Button
-//TODO
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a1469b08-ccec-4c3d-8e8b-98520c400dd8)
+&nbsp;
+
 ### Visual-Impaired Webplayer
-//TODO
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/06ed7946-6b95-415f-b3d5-b1a382c3b9e1)
+&nbsp;
+
 ## Embed Script
 
 The following script needs to be copied and inserted anywhere within the ```<body>``` of your website. Please replace the ```LITE_PLAYER``` tag in the ```player="LITE_PLAYER"``` attribute with the tag according to your player from the list below.
