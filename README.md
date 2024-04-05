@@ -361,15 +361,15 @@ Adjusts the element containing the current delay in seconds in the delay menu.
 Example:
 ```
 mycrocast-lite-player::part(mcc-delay-current) {
-    color: deepskyblue;
+    color: #ff2e2e;
 }
 ```
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/-xSmAiUNKt0ySmkAhNyZi2vPGz_RtIGOhUlaNMwvzbObJamklo3lirXajznCA1XpHo2Dc78an9TSRfo1cFN9c9avwfpNu4-yQM8_c0M_0IzEfSYdGC-KPbQiiJXDnSqudGJgp6ZR20XkRcsbat8YuMw)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5d444a52-8130-437f-9c6b-31418ceb90d9)
 &nbsp;
+
 #### mcc-delay-overlay-close
 
 Adjusts the button that closes the delay menu.
@@ -377,15 +377,15 @@ Adjusts the button that closes the delay menu.
 Example:
 ```
 mycrocast-lite-player::part(mcc-delay-overlay-close) {
-    color: deepskyblue;
+    color: #ff2e2e;
 }
 ```
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/iNzMMGawzDCuGviG3hS482id_HYFgxF_ffnuM0dESpiKcBnB-02N69Ajq8JYRJ8N46mXuEALsoKygNVRZAU6f3tsK5HagFhPgL6jcMNfWfOjyZveD8HZstVBfjDCCJGJHv_U5pz0thAedZ3kjmZjFl8)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ee424885-42aa-4c5c-b30f-2b6bfe560d54)
 &nbsp;
+
 #### mcc-delay-rewind-1s
 
 Adjusts the button that increases the delay by one second. For the other buttons that set the delay, the classes are ```mcc-delay-rewind-5s```, ```mcc-delay-rewind-30s```, ```mcc-delay-forward-5s```, ```mcc-delay-forward-1s```, where "rewind" stands for increasing and "forward" for decreasing the delay.
@@ -393,15 +393,15 @@ Adjusts the button that increases the delay by one second. For the other buttons
 Example for one of the buttons:
 ```
 mycrocast-lite-player::part(mcc-delay-rewind-1s) {
-    color: deepskyblue;
+    color: #ff2e2e;
 }
 ``` 
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/dr42XWMVfS_LH2DEEd0s4huLbLu8HIRfOCq4v9Bj6XOUND89wFbc0eoMKO6qe0anHKeosM5mr9BO4C1-5H8TaRueGKSCpXvAgpackVlLXgsDafDsWz8WLTCVp2sZLLVLB2zD0zgTGPje_Oziu_Drr7Q)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/660b1e7e-c966-4779-811d-5dc0fdaee80d)
 &nbsp;
+
 #### mcc-delay-to-live
 
 Adjusts the button with the text "Live", which resets the delay to 0. To adjust the color, the variable ```--color``` must be set here!
@@ -409,30 +409,18 @@ Adjusts the button with the text "Live", which resets the delay to 0. To adjust 
 Example:
 ```
 mycrocast-lite-player::part(mcc-delay-to-live) {
-    --color: deepskyblue;
+    --color: #ff2e2e;
 }
 ```
 
 Result:
 
-![](https://lh7-us.googleusercontent.com/qFuyPSj3zbCfFdw_Xrx6q4EfmFbZ6cw556NMRehAfPZ51vZLZx3FLmLTAo3EQCcJr6-ZBSeZaMhFVeBLkX-ZGS5tcck8Nyrdv7dxXXMc9hKFDFY1JcKrYAThaEyPHlnI-fxKhzlsSYzk0L7GwwgThsQ)
-
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0d8f45ea-ae17-402b-a12e-ab89ef67f798)
 &nbsp;
+
 #### mcc-delay-bar-wrapper
 
 Affects the delay bar in the delay menu as a whole. Can be used to define the background color and margins/paddings to other elements
-
-Example:
-```
-mycrocast-lite-player::part(mcc-delay-bar-wrapper) {
-    background-color: white;
-    margin-left: 3em;
-}
-```
-
-Result:
-
-![](https://lh7-us.googleusercontent.com/9P691gmUBVmRomZsFnjM3vmf5BIaTY0RBMH9dDxbabehgK2JZVp3rOXtNPabgRzz7xSUQKACf20xI0pG9Y5MSkMz4RusOFXATwvAN4GEJUnOtOffC6ILvAndqSnbdv8MwZMIzDLD1kZIWS55lnXsH8U)
 
 &nbsp;
 #### mcc-delay-bar-buffered
@@ -443,6 +431,26 @@ Adjusts the indicator in the delay bar that shows how much audio data is current
 #### mcc-delay-bar-current
 
 Adjusts the indicator in the delay bar that shows how long the current delay is. Behaves similarly to mcc-delay-bar-wrapper
+
+Example editing all delay-bar classes:
+```
+mycrocast-lite-player::part(mcc-delay-bar-wrapper) {
+    background-color: #bb2222;
+}
+
+mycrocast-lite-player::part(mcc-delay-bar-buffered) {
+    background-color: #ff2e2e;
+}
+
+mycrocast-lite-player::part(mcc-delay-bar-current) {
+    background-color: #ff8888;
+}
+```
+
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c756aa54-45bd-4044-aac3-b32a32f956ca)
+&nbsp;
 
 # Floating-Button Webplayer <a name="floating"></a>
 &nbsp;
