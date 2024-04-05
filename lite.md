@@ -57,7 +57,7 @@ mcc-lite-player::part(mcc-lite-player-viewport) {
 Here, "mcc-lite-player-viewport" can be replaced by one of the class names defined on the following pages in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
 &nbsp;
 
-#### mcc-lite-player-viewport
+### mcc-lite-player-viewport
 
 Can be used to adjust the height, width, color and shape of the player.
 
@@ -77,7 +77,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a6aca57f-691a-4254-bd16-a56916ec8997)
 &nbsp;
 
-#### mcc-play-pause-controls
+### mcc-play-pause-controls
 
 Affects the play/pause icon on the left-hand side of the player. 
 
@@ -95,7 +95,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b7edaf86-ea70-493b-ac03-223957387508)
 &nbsp;
 
-#### mcc-play-pause-controls-disabled
+### mcc-play-pause-controls-disabled
 
 If no live broadcast is available or advertisements are being played during an active broadcast, the play/pause button is deactivated and mcc-play-pause-controls is replaced by mcc-play-pause-controls-disabled. As the CSS class changes, all adjustments made for mcc-play-pause-controls must also be made for mcc-play-pause-controls-disabled! Only the color should be different to give the listener visual feedback that the button is disabled.
 
@@ -116,7 +116,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a89e2eba-6cda-40dc-9622-80cdeffab4b4)
 &nbsp;
 
-#### mcc-stream-title
+### mcc-stream-title
 
 Adjusts the properties of the stream title shown besides the play/pause-button.
 
@@ -133,7 +133,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/17ffc0a0-3c2d-47df-989d-8968099b050c)
 &nbsp;
 
-#### mcc-listener-info
+### mcc-listener-info
 
 Adjusts the properties of the element containing the number of listeners. Affects both the icon and the displayed number. Can also be hidden with display: none if required.
 
@@ -152,7 +152,7 @@ Result (without hiding the element):
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5cf30be0-2290-4645-a9bd-27669ea78eea)
 &nbsp;
 
-#### mcc-stream-info
+### mcc-stream-info
 
 Adjusts the properties of the other stream information (language and the stream start time).
 
@@ -168,7 +168,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/897be569-e9ac-41df-9dd6-9a0cad53bc95)
 &nbsp;
 
-#### mcc-delay-overlay-button
+### mcc-delay-overlay-button
 
 Affects the icon on the right-hand side of the player that opens the synchronization menu.
 
@@ -185,7 +185,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ad22090c-ce4e-4d15-a406-c38cfbd23d9c)
 &nbsp;
 
-#### mcc-delay-overlay-button-disabled
+### mcc-delay-overlay-button-disabled
 
 Just like the play/pause button, the button for opening the delay menu is disabled in certain scenarios as well. The classes are exchanged here too, which is why all the properties set in mcc-delay-overlay-button must be adopted in mcc-delay-overlay-button-disabled. Only the color should also be changed here to give the listener visual feedback that the button is disabled.
 
@@ -201,7 +201,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/406a2a52-7967-4d05-8fe2-35fd260ea6db)
 &nbsp;
 
-#### mcc-spot-item
+### mcc-spot-item
 
 When an advertisement is played, some elements in the player disappear and the user is shown the text "Advertisement - to be continued shortly". mcc-spot-item affects the element that contains this text.
 
@@ -217,7 +217,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c32f8ff4-02b2-4072-8157-99669302e0e3)
 &nbsp;
 
-#### mcc-message-info
+### mcc-message-info
 
 The listener is occasionally shown status messages while listening, e.g. when the streamer is muted. The class customizes this status message.
 
@@ -234,7 +234,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2fbeacb5-aace-4c61-9b3c-458a55174b74)
 &nbsp;
 
-#### mcc-message-danger
+### mcc-message-danger
 
 Displayed if there is a problem with the transmission. Behaves like mcc-message-info.
 
@@ -251,7 +251,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/de0ac353-635d-4245-b84a-e0165487f268)
 &nbsp;
 
-#### mcc-stream-placeholder
+### mcc-stream-placeholder
 
 Customizes to the element that is displayed when no transmission is available.
 
@@ -267,7 +267,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0ab2f272-437a-4b20-b7e8-41f9da9a9c94)
 &nbsp;
 
-#### mcc-next-stream
+### mcc-next-stream
 
 If several streams are available, a button is displayed at the bottom of the player which the listener can use to navigate between different streams.
 
@@ -283,7 +283,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4534190b-87b2-4f52-b01c-8e0e6944508d)
 &nbsp;
 
-#### mcc-delay-overlay-wrapper
+### mcc-delay-overlay-wrapper
 
 Can be used to set the color, padding, and other properties of the delay overlay
 
@@ -299,7 +299,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e27a8c67-8c5f-4d38-aaaa-6338e75a8938)
 &nbsp;
 
-#### mcc-delay-play-pause-controls
+### mcc-delay-play-pause-controls
 
 As the delay menu can have a different color, the play/pause button can also be different here. Can be customized like mcc-play-pause-controls.
 ```
@@ -313,7 +313,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ba4019a7-5b96-4244-aad9-50c9e3534a95)
 &nbsp;
 
-#### mcc-delay-play-pause-controls-disabled
+### mcc-delay-play-pause-controls-disabled
 
 The play/pause button can be deactivated in the delay menu as well. Again, all properties of mcc-delay-play-pause-controls should be adopted and only the color should be adjusted as visual indication.
 
@@ -328,7 +328,7 @@ mycrocast-lite-player::part(mcc-delay-play-pause-controls-disabled) {
 
 
 &nbsp;
-#### mcc-delay-current
+### mcc-delay-current
 
 Adjusts the element containing the current delay in seconds in the delay menu.
 
@@ -344,7 +344,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5d444a52-8130-437f-9c6b-31418ceb90d9)
 &nbsp;
 
-#### mcc-delay-overlay-close
+### mcc-delay-overlay-close
 
 Adjusts the button that closes the delay menu.
 
@@ -360,7 +360,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ee424885-42aa-4c5c-b30f-2b6bfe560d54)
 &nbsp;
 
-#### mcc-delay-rewind-1s
+### mcc-delay-rewind-1s
 
 Adjusts the button that increases the delay by one second. For the other buttons that set the delay, the classes are ```mcc-delay-rewind-5s```, ```mcc-delay-rewind-30s```, ```mcc-delay-forward-5s```, ```mcc-delay-forward-1s```, where "rewind" stands for increasing and "forward" for decreasing the delay.
 
@@ -376,7 +376,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/660b1e7e-c966-4779-811d-5dc0fdaee80d)
 &nbsp;
 
-#### mcc-delay-to-live
+### mcc-delay-to-live
 
 Adjusts the button with the text "Live", which resets the delay to 0. To adjust the color, the variable ```--color``` must be set here!
 
@@ -392,17 +392,17 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0d8f45ea-ae17-402b-a12e-ab89ef67f798)
 &nbsp;
 
-#### mcc-delay-bar-wrapper
+### mcc-delay-bar-wrapper
 
 Affects the delay bar in the delay menu as a whole. Can be used to define the background color and margins/paddings to other elements
 
 &nbsp;
-#### mcc-delay-bar-buffered
+### mcc-delay-bar-buffered
 
 Adjusts the indicator in the delay bar that shows how much audio data is currently buffered. Behaves similarly to mcc-delay-bar-wrapper
 
 &nbsp;
-#### mcc-delay-bar-current
+### mcc-delay-bar-current
 
 Adjusts the indicator in the delay bar that shows how long the current delay is. Behaves similarly to mcc-delay-bar-wrapper
 
