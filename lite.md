@@ -424,3 +424,16 @@ Result:
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c756aa54-45bd-4044-aac3-b32a32f956ca)
 &nbsp;
+
+## Full Example
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0b0f71c1-1d8b-44e2-b536-71705540a78c)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5cb8fe20-ce9a-4f4c-b245-51f29f4a808e)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5ae3ff50-7e38-4f85-af9f-31fa7c5681cc)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/912cc8c9-4ab1-465c-8c51-062453efe345)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/301f7496-c429-4735-998f-cfde6eb284d3)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0fc77cdb-69ff-4451-944f-4bd220fbff9d)
