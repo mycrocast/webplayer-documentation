@@ -37,9 +37,23 @@ mycrocast-lite-player {
     --mcc-player-delay-bar-current: lightblue;
 }
 
-```  
+```
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/07f61725-385e-4759-b246-6bca1a7e31a4)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/17a0f28b-81b4-4984-87b2-9306724b5bb0)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/744979bb-d08d-4a9b-ab29-011527f794a1)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9f1dbcda-f022-4148-bbf0-d5309979ba67)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/710251cb-8f8b-45cb-aa31-5285db993e57)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/98bcee20-ae42-47af-bbf6-406a796998fb)
 
 Not all variables need to be defined.
+
+
 
 &nbsp;
 
