@@ -425,132 +425,187 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c756aa54-45bd-4044-aac3-b32a32f956ca)
 &nbsp;
 
-## Full Example with parts
+## Full Example with variables
 
 Styles copied into a style tag within the ```<body>``` or imported from an external stylesheet in the ```<head>```:
 
 ```
-mycrocast-lite-player::part(mcc-lite-player-viewport) {  
-  background-color: #555555;  
-  height: 200px;  
-  border-radius: 0;  
-  width: 600px;  
-}  
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>WebplayerLiteButton</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <mycrocast-lite-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-lite-player>
+    <script id="mycrocast_base" src="http://localhost:8000/versioning-script.js" player="LITE_PLAYER"></script>
+    <style>
+
+        mycrocast-lite-player {
+            --mcc-player-background-color: #555555;  
+            --mcc-player-font-color: #ff2e2e;  
   
-mycrocast-lite-player::part(mcc-play-pause-controls) {  
-  color: #ff2e2e;  
-  padding: 0 2em;  
-}  
+            --mcc-player-overlay-color: #000000af;  
+            --mcc-player-overlay-font-color: #ff2e2e;  
   
-mycrocast-lite-player::part(mcc-play-pause-controls-disabled) {  
-  /*different color to show that button is deactivated*/  
- color: #bb2222;  
+            --mcc-player-button-disabled-color: #bb2222;  
   
-  /*all other properties should be adopted!*/  
- padding: 0 2em;  
-}  
+            --mcc-player-delay-bar-background: #bb2222;  
+            --mcc-player-delay-bar-buffer: #ff2e2e;  
+            --mcc-player-delay-bar-current: #ff8888;
+        }
+    </style>
+</body>
+</html>
+```
+
+## Full example with parts
+
+```
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>WebplayerLiteButton</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <mycrocast-lite-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-lite-player>
+    <script id="mycrocast_base" src="http://localhost:8000/versioning-script.js" player="LITE_PLAYER"></script>
+    <style>
+        mycrocast-lite-player::part(mcc-lite-player-viewport) {  
+            background-color: #555555;  
+            height: 200px;  
+            border-radius: 0;  
+            width: 600px;  
+        }
   
-mycrocast-lite-player::part(mcc-stream-title) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-play-pause-controls) {  
+            color: #ff2e2e;  
+            padding: 0 2em;  
+        }  
   
-mycrocast-lite-player::part(mcc-listener-info) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-play-pause-controls-disabled) {  
+            /*different color to show that button is deactivated*/  
+            color: #bb2222;  
   
-mycrocast-lite-player::part(mcc-stream-info) {  
-  color: #ff2e2e;  
-}  
+            /*all other properties should be adopted!*/  
+            padding: 0 2em;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-overlay-button) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-stream-title) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-overlay-button-disabled) {  
-  color: #bb2222;  
-}  
+        mycrocast-lite-player::part(mcc-listener-info) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-spot-item) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-stream-info) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-message-info) {  
-  color: #ff2e2e;  
-  background: white;  
-}  
+        mycrocast-lite-player::part(mcc-delay-overlay-button) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-message-danger) {  
-  color: white;  
-  background: darkred;  
-}  
+        mycrocast-lite-player::part(mcc-delay-overlay-button-disabled) {  
+            color: #bb2222;  
+        }  
   
-mycrocast-lite-player::part(mcc-stream-placeholder) {  
-  color: #ff2e2e;  
-} 
+        mycrocast-lite-player::part(mcc-spot-item) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-overlay-wrapper) {  
-  background-color: #000000af;  
-}  
+        mycrocast-lite-player::part(mcc-message-info) {  
+            color: #ff2e2e;  
+            background: white;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-play-pause-controls) {  
-  color: #ff2e2e;  
-  padding: 0 2em;  
-}  
+        mycrocast-lite-player::part(mcc-message-danger) {  
+            color: white;  
+            background: darkred;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-play-pause-controls-disabled) {  
-  color: #bb2222;  
-  padding: 0 2em;  
-}  
+        mycrocast-lite-player::part(mcc-stream-placeholder) {  
+            color: #ff2e2e;  
+        } 
   
-mycrocast-lite-player::part(mcc-delay-current) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-overlay-wrapper) {  
+            background-color: #000000af;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-overlay-close) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-play-pause-controls) {  
+            color: #ff2e2e;  
+            padding: 0 2em;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-rewind-1s) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-play-pause-controls-disabled) {
+            color: #bb2222;  
+            padding: 0 2em;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-rewind-5s) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-current) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-rewind-30s) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-overlay-close) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-to-live) {  
-  --color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-rewind-1s) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-forward-5s) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-rewind-5s) {  
+            color: #ff2e2e;  
+        }  
+              
+        mycrocast-lite-player::part(mcc-delay-rewind-30s) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-forward-1s) {  
-  color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-to-live) {  
+            --color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-bar-wrapper) {  
-  background-color: #bb2222;  
-  margin-left: 3em;  
-}  
+        mycrocast-lite-player::part(mcc-delay-forward-5s) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-bar-buffered) {  
-  background-color: #ff2e2e;  
-}  
+        mycrocast-lite-player::part(mcc-delay-forward-1s) {  
+            color: #ff2e2e;  
+        }  
   
-mycrocast-lite-player::part(mcc-delay-bar-current) {  
-  background-color: #ff8888;  
-  margin-left: 3em;  
-}  
+        mycrocast-lite-player::part(mcc-delay-bar-wrapper) {  
+            background-color: #bb2222;  
+            margin-left: 3em;  
+        }  
   
-mycrocast-lite-player::part(mcc-next-stream) {  
-  color: #ff2e2e;  
-}
+        mycrocast-lite-player::part(mcc-delay-bar-buffered) {  
+            background-color: #ff2e2e;  
+        }  
+  
+        mycrocast-lite-player::part(mcc-delay-bar-current) {  
+            background-color: #ff8888;  
+            margin-left: 3em;  
+        }  
+  
+        mycrocast-lite-player::part(mcc-next-stream) {  
+            color: #ff2e2e;  
+        }
+    </style>
+</body>
+</html>
 ```
 
 &nbsp;
