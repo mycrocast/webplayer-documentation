@@ -425,11 +425,137 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c756aa54-45bd-4044-aac3-b32a32f956ca)
 &nbsp;
 
-## Full Example
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0b0f71c1-1d8b-44e2-b536-71705540a78c)
+## Full Example with parts
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5cb8fe20-ce9a-4f4c-b245-51f29f4a808e)
+Styles copied into a style tag within the ```<body>``` or imported from an external stylesheet in the ```<head>```:
 
+```
+mycrocast-lite-player::part(mcc-lite-player-viewport) {  
+  background-color: #555555;  
+  height: 200px;  
+  border-radius: 0;  
+  width: 600px;  
+}  
+  
+mycrocast-lite-player::part(mcc-play-pause-controls) {  
+  color: #ff2e2e;  
+  padding: 0 2em;  
+}  
+  
+mycrocast-lite-player::part(mcc-play-pause-controls-disabled) {  
+  /*different color to show that button is deactivated*/  
+ color: #bb2222;  
+  
+  /*all other properties should be adopted!*/  
+ padding: 0 2em;  
+}  
+  
+mycrocast-lite-player::part(mcc-stream-title) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-listener-info) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-stream-info) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-overlay-button) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-overlay-button-disabled) {  
+  color: #bb2222;  
+}  
+  
+mycrocast-lite-player::part(mcc-spot-item) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-message-info) {  
+  color: #ff2e2e;  
+  background: white;  
+}  
+  
+mycrocast-lite-player::part(mcc-message-danger) {  
+  color: white;  
+  background: darkred;  
+}  
+  
+mycrocast-lite-player::part(mcc-stream-placeholder) {  
+  color: #ff2e2e;  
+} 
+  
+mycrocast-lite-player::part(mcc-delay-overlay-wrapper) {  
+  background-color: #000000af;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-play-pause-controls) {  
+  color: #ff2e2e;  
+  padding: 0 2em;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-play-pause-controls-disabled) {  
+  color: #bb2222;  
+  padding: 0 2em;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-current) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-overlay-close) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-rewind-1s) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-rewind-5s) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-rewind-30s) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-to-live) {  
+  --color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-forward-5s) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-forward-1s) {  
+  color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-bar-wrapper) {  
+  background-color: #bb2222;  
+  margin-left: 3em;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-bar-buffered) {  
+  background-color: #ff2e2e;  
+}  
+  
+mycrocast-lite-player::part(mcc-delay-bar-current) {  
+  background-color: #ff8888;  
+  margin-left: 3em;  
+}  
+  
+mycrocast-lite-player::part(mcc-next-stream) {  
+  color: #ff2e2e;  
+}
+```
+
+&nbsp;
+
+### Resulting player:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5ae3ff50-7e38-4f85-af9f-31fa7c5681cc)
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/912cc8c9-4ab1-465c-8c51-062453efe345)
@@ -437,3 +563,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/301f7496-c429-4735-998f-cfde6eb284d3)
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0fc77cdb-69ff-4451-944f-4bd220fbff9d)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0b0f71c1-1d8b-44e2-b536-71705540a78c)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5cb8fe20-ce9a-4f4c-b245-51f29f4a808e)
