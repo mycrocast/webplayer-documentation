@@ -25,13 +25,13 @@ We provide three different players you can choose from.
 
 ## Embed Script
 
-The following script needs to be copied and inserted anywhere within the ```<body>``` of your website. Please replace the ```LITE_PLAYER``` tag in the ```player="LITE_PLAYER"``` attribute with the tag according to your player from the list below.
+The following script needs to be copied and inserted anywhere within the ```<body>``` of your website. Please replace the ```LITE_PLAYER``` tag in the ```player=LITE_PLAYER``` attribute with the tag according to your player from the list below.
 
 ```
 <script
 	id="mycrocast_base"
 	src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js"
-	player=”LITE_PLAYER”>
+	player=LITE_PLAYER>
 </script>
 ```
 &nbsp;
