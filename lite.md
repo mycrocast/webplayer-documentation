@@ -1,4 +1,4 @@
-# Webplayer Lite <a name="lite-player"></a>
+# Webplayer Lite
 
 ## Adjust Player Elements
 You can make adjustments to parts of the webplayer using CSS. The styles can be added via a ```<style>``` tag in the ```<body>```, or via an external stylesheet that is imported in the ```<head>```. Adjustments are made by setting CSS variables or by modifying shadow DOM parts. You can find fully implemented examples for both at the end of this page.
