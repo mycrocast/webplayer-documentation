@@ -447,7 +447,7 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
 
 <body>
     <mycrocast-lite-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-lite-player>
-    <script id="mycrocast_base" src="http://localhost:8000/versioning-script.js" player=LITE_PLAYER></script>
+    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=LITE_PLAYER></script>
     <style>
 
         mycrocast-lite-player {
