@@ -468,7 +468,7 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
 </html>
 ```
 
-### Resulting player
+### Resulting player:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/07f61725-385e-4759-b246-6bca1a7e31a4)
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/17a0f28b-81b4-4984-87b2-9306724b5bb0)
@@ -480,6 +480,7 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/710251cb-8f8b-45cb-aa31-5285db993e57)
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/98bcee20-ae42-47af-bbf6-406a796998fb)
+&nbsp
 
 ## Full example with parts
 
