@@ -24,32 +24,22 @@ The CSS style of the website should embed the variables similar to the following
 
 ```
 mycrocast-lite-player {
-    --mcc-player-background-color: red;
-    --mcc-player-font-color: white;
+    --mcc-player-background-color: #555555;
+    --mcc-player-font-color: #ff2e2e;
 	
     --mcc-player-overlay-color: #000000af;
-    --mcc-player-overlay-font-color: white; 
+    --mcc-player-overlay-font-color: #ff2e2e; 
 	
-    --mcc-player-button-disabled-color: gray;
+    --mcc-player-button-disabled-color: #bb2222;
 	
-    --mcc-player-delay-bar-background: darkblue;
-    --mcc-player-delay-bar-buffer: blue;
-    --mcc-player-delay-bar-current: lightblue;
+    --mcc-player-delay-bar-background: #bb2222;
+    --mcc-player-delay-bar-buffer: #ff2e2e;
+    --mcc-player-delay-bar-current: #ff8888;
 }
 
 ```
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/07f61725-385e-4759-b246-6bca1a7e31a4)
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/17a0f28b-81b4-4984-87b2-9306724b5bb0)
-
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/744979bb-d08d-4a9b-ab29-011527f794a1)
-
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9f1dbcda-f022-4148-bbf0-d5309979ba67)
-
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/710251cb-8f8b-45cb-aa31-5285db993e57)
-
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/98bcee20-ae42-47af-bbf6-406a796998fb)
 
 Not all variables need to be defined.
 
@@ -457,7 +447,7 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
 
 <body>
     <mycrocast-lite-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-lite-player>
-    <script id="mycrocast_base" src="http://localhost:8000/versioning-script.js" player="LITE_PLAYER"></script>
+    <script id="mycrocast_base" src="http://localhost:8000/versioning-script.js" player=LITE_PLAYER></script>
     <style>
 
         mycrocast-lite-player {
@@ -478,6 +468,19 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
 </html>
 ```
 
+### Resulting player
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/07f61725-385e-4759-b246-6bca1a7e31a4)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/17a0f28b-81b4-4984-87b2-9306724b5bb0)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/744979bb-d08d-4a9b-ab29-011527f794a1)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9f1dbcda-f022-4148-bbf0-d5309979ba67)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/710251cb-8f8b-45cb-aa31-5285db993e57)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/98bcee20-ae42-47af-bbf6-406a796998fb)
+
 ## Full example with parts
 
 ```
@@ -494,7 +497,11 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
 
 <body>
     <mycrocast-lite-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-lite-player>
-    <script id="mycrocast_base" src="http://localhost:8000/versioning-script.js" player="LITE_PLAYER"></script>
+    <script
+	    id="mycrocast_base"
+	    src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js"
+	    player=LITE_PLAYER>
+    </script>
     <style>
         mycrocast-lite-player::part(mcc-lite-player-viewport) {  
             background-color: #555555;  
