@@ -12,7 +12,7 @@ CSS variables can only be used to adjust the colors of the web player. Standard 
 | mcc-player-background-color | Adjusts the background color of the entire player. |
 | mcc-player-font-color | Adjusts the font color of the player, including all icons. |
 | mcc-player-overlay-color | Adjusts the background color of the delay menu. |
-| mcc-player-overlay-font-color | Changes the font color within the delay menu, including all buttons for setting the delay. |
+| mcc-player-overlay-font-color | Changes the font color of the loading animation and of the delay menu, including all buttons for setting the delay. |
 | mcc-player-button-disabled-color | Some buttons can be deactivated sometimes. By default, the color is set to grey, which can be changed using this variable. |
 | mcc-player-delay-bar-background | Adjusts the background color of the delay bar in the delay menu |
 | mcc-player-delay-bar-buffer | Adjusts the color of the indicator in the delay bar that shows the currently buffered audio data. Also affects the color of the "Live" button if no delay is set. |
