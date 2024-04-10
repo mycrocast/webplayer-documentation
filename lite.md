@@ -680,6 +680,8 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/912cc8c9-4ab1-465c-8c51-062453efe345)
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/d1e996fa-1af6-4932-b5cc-88788eec6087)
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/301f7496-c429-4735-998f-cfde6eb284d3)
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0fc77cdb-69ff-4451-944f-4bd220fbff9d)
