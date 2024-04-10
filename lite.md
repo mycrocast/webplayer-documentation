@@ -297,6 +297,11 @@ mycrocast-lite-player::part(mcc-loading-anim-wrapper) {
 }
 ```
 
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/020fd94f-0534-4dc8-81bd-5593cb3fc029)
+&nbsp;
+
 ### mcc-loading-anim
 
 Adjusts the properties of the loading animation within the loading animation wrapper.
@@ -311,6 +316,8 @@ mycrocast-lite-player::part(mcc-loading-anim) {
 
 Result:
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/cd392355-22f7-4eb8-989e-48c4840b1e8e)
+&nbsp;
 
 ### mcc-delay-overlay-wrapper
 
