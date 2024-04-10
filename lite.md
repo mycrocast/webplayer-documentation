@@ -286,6 +286,32 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4534190b-87b2-4f52-b01c-8e0e6944508d)
 &nbsp;
 
+### mcc-loading-anim-wrapper
+
+Can be used to set the color, padding, and other properties of the laoding animation overlay
+
+Example: 
+```
+mycrocast-lite-player::part(mcc-loading-anim-wrapper) {
+    --color: #000000af;;
+}
+```
+
+### mcc-loading-anim
+
+Adjusts the properties of the loading animation within the loading animation wrapper.
+
+Example:
+
+```
+mycrocast-lite-player::part(mcc-loading-anim) {
+    --color: #ff2e2e;
+}
+```
+
+Result:
+
+
 ### mcc-delay-overlay-wrapper
 
 Can be used to set the color, padding, and other properties of the delay overlay
