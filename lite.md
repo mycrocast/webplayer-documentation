@@ -473,6 +473,8 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/17a0f28b-81b4-4984-87b2-9306724b5bb0)
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/698a0df3-7ce2-4105-81d2-bf9894aac4ce)
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/744979bb-d08d-4a9b-ab29-011527f794a1)
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9f1dbcda-f022-4148-bbf0-d5309979ba67)
