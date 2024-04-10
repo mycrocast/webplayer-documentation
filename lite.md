@@ -595,7 +595,15 @@ Styles copied into a style tag within the ```<body>``` or imported from an exter
   
         mycrocast-lite-player::part(mcc-stream-placeholder) {  
             color: #ff2e2e;  
-        } 
+        }
+
+        mycrocast-lite-player::part(mcc-loading-anim-wrapper) {
+            --color: #000000af;
+        }
+
+        mycrocast-lite-player::part(mcc-loading-anim) {
+            --color: #ff2e2e;
+        }
   
         mycrocast-lite-player::part(mcc-delay-overlay-wrapper) {  
             background-color: #000000af;  
