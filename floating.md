@@ -225,7 +225,9 @@ The following code snippet shows an example HTML page that embeds the player and
 ```
 
 ### Result:
-TODO
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4c4ce992-4dea-48cd-a9e5-03f810e9ff33)
+
 &nbsp;
 
 ## Full example with parts
