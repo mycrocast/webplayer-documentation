@@ -189,3 +189,44 @@ Adjusts the indicator in the delay bar that shows how much audio data is current
 
 #### mcc-delay-bar-current
 Adjusts the indicator in the delay bar that shows how long the current delay is. Behaves similarly to mcc-delay-bar-wrapper
+&nbsp;
+
+## Full example with variables
+The following code snippet shows an example HTML page that embeds the player and adjusts its properties using CSS variables:
+
+```
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>WebplayerLiteButton</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <mycrocast-floating-button-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-floating-button-player>
+    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=FLOATING_BUTTON_PLAYER></script>
+    <style>
+
+        mycrocast-lite-player {
+            --mcc-player-background-color: #555555;  
+            --mcc-player-font-color: #ff2e2e;
+  
+            --mcc-player-delay-bar-background: #bb2222;  
+            --mcc-player-delay-bar-buffer: #ff2e2e;  
+            --mcc-player-delay-bar-current: #ff8888;
+        }
+    </style>
+</body>
+</html>
+```
+
+### Result:
+TODO
+&nbsp;
+
+## Full example with parts
+

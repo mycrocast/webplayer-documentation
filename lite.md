@@ -464,7 +464,7 @@ Result:
 
 ## Full Example with variables
 
-Styles copied into a style tag within the ```<body>``` or imported from an external stylesheet in the ```<head>```:
+The following code snippet shows an example HTML page that embeds the player and adjusts its properties using CSS variables:
 
 ```
 <!doctype html>
