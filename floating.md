@@ -338,4 +338,118 @@ The following code snippet shows an example HTML page that embeds the player and
 &nbsp;
 
 ## Full example with parts
+```
+<!doctype html>
+<html>
 
+<head>
+<meta charset="utf-8">
+<title>WebplayerLiteButton</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <mycrocast-floating-button-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-floating-button-player>
+    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=FLOATING_BUTTON_PLAYER></script>
+    <style>
+        mycrocast-floating-button-player::part(mcc-player-initial-button) {  
+            background-color: #555555;  
+            width: 5em;  
+            height: 5em;  
+            border: 2px solid #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-player-content-wrapper) {  
+            background-color: #555555;  
+            border-color: #ff2000;  
+            border: 2px solid #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-stream-title) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-listener-count) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-stream-language) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-play-pause-controls) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-stop-listen-button) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-spot-item) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-next-stream-button) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-player-content-close) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-message-info) {  
+            color: #ff2000;  
+            background: white;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-message-danger) {  
+            color: white;  
+            background: darkred;  
+        }  
+  
+  
+        mycrocast-floating-button-player::part(mcc-delay-current) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-rewind-1s) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-rewind-5s) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-rewind-30s) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-to-live) {  
+            --color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-forward-5s) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-forward-1s) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-bar-wrapper) {  
+            background-color: #bb2222;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-bar-buffered) {  
+            background-color: #ff2000;  
+        }  
+  
+        mycrocast-floating-button-player::part(mcc-delay-bar-current) {  
+            background-color: #ff8888;  
+        }
+    </style>
+</body>
+</html>
+```
