@@ -47,103 +47,193 @@ Here, ```mcc-player-initial-button``` can be replaced by one of the class names 
 
 #### mcc-player-initial-button
 Adjusts the properties of the button shown initially when a stream is available. The class can be used to change its size as well.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-player-initial-button) {  
-    background-color: red;
+    background-color: #555555;
+    width: 5em;
+    height: 5em;
+    border: 2px solid #ff2000;
 }
 ```
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b977504c-eff1-46d1-a651-e4347f33ff8a)
 &nbsp;
 
 #### mcc-player-content-wrapper
 Adjusts the properties of the stream view after the listener clicked on the initial button. The class can be used to change the dimensions of the stream view as well.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-player-content-wrapper) {  
-    background-color: red;
+    background-color: #555555;
+    border-color: #ff2000;
+    border: 2px solid #ff2000;
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3acba4d3-c6d5-4c45-8f42-7d0bd2d2a093)
+&nbsp;
+
+#### mcc-stream-title
+Adjusts the properties of the stream title.
+
+Example:
+```
+mycrocast-floating-button-player::part(mcc-stream-title) {
+    color: #ff2000;
+}
+```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0a41b261-d5c3-4a2e-81b6-84698da4357b)
+&nbsp;
+
+#### mcc-stream-language
+Adjusts the properties of the stream language.
+
+Example:
+```
+mycrocast-floating-button-player::part(mcc-stream-language) {
+    color: #ff2000;
+}
+```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9b01666b-6391-475b-b8d1-9be22ddca908)
+&nbsp;
+
+#### mcc-listener-count
+Adjusts the properties of the listener icon, the listener count and the dash between the language and the listener-icon.
+
+Example:
+```
+mycrocast-floating-button-player::part(mcc-listener-count) {
+    color: #ff2000;
+}
+```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3d6c811a-a22f-49b4-a64b-351b5f86b6bc)
 &nbsp;
 
 #### mcc-play-pause-controls
 Changes the properties of the play/pause-button within the stream view. Affects both the icon and the text besides it.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-play-pause-controls) {  
-    color: black;  
+    color: #ff2000;  
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2acfa4e6-5ee4-421e-9ff2-0b1956c15a9c)
 &nbsp;
 
 #### mcc-stop-listen-button
 Changes the property of the stop-listen-button within the stream view. Affects both the icon and the text besides it.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-stop-listen-button) {  
-    color: black;  
+    color: #ff2000;  
 }
 ```
-&nbsp;
 
-#### mcc-delay-menu-button
-Changes the properties of the delay-menu-button within the stream view. Affects both the icon and the text besides it.
-```
-mycrocast-floating-button-player::part(mcc-delay-menu-button) {  
-    color: black;  
-}
-```
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0b54115d-05df-47f2-bc41-ffb94ef961f5)
 &nbsp;
 
 #### mcc-next-stream-button
 Changes the properties of the next-stream-button within the stream view. Affects both the icon and the text besides it.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-next-stream-button) {  
-    color: black;  
+    color: #ff2000;  
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/7265a2ad-92af-474d-a0ca-4e3fda246bc7)
 &nbsp;
 
 #### mcc-spot-item
 Changes the properties of the spot title and the text "to be continued shortly" when a spot is being played.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-spot-item) {  
-    color: black;  
+    color: #ff2000;  
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e7621c4a-3a89-4a5f-a2cf-071c5dadb9d7)
+
 &nbsp;
 
 #### mcc-player-content-close
 Changes the properties of the close icon on the top right of the stream view.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-player-content-close) {  
-    color: black;  
+    color: #ff2000;  
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/08070079-0081-4371-a1a6-5364512d7250)
+
 &nbsp;
 
 #### mcc-message-info
 The listener is occasionally shown status messages while listening, e.g. when the streamer is muted. The class customizes this status message.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-message-info) {  
-    color: white;  
-    background: blue;  
+    color: #ff2000;  
+    background: white;  
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/29199e60-4798-42cd-b829-ae739af51f93)
 &nbsp;
 
 #### mcc-message-danger
 Displayed if there is a problem with the transmission. Behaves like mcc-message-info.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-message-danger) {  
-    color: black;  
+    color: white;  
     background: darkred;  
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4a56bdfe-77d5-428a-8140-fb354f849fd0)
 &nbsp;
 
 #### mcc-delay-current
 Adjusts properties of the element displaying the current delay in seconds besides the delay bar.
+
+Example:
 ```
 mycrocast-floating-button-player::part(mcc-delay-current) {  
-    color: deepskyblue;  
+    color: #ff2000;  
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/cd5ca8ef-7db2-4c49-8f00-a96b4edf70e8)
+
 &nbsp;
 
 #### mcc-delay-rewind-1s
@@ -155,6 +245,9 @@ mycrocast-floating-button-player::part(mcc-delay-rewind-1s) {
     color: black;  
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/bf8456cf-0174-49de-b4f8-934e7ed4ee1b)
 &nbsp;
 
 #### mcc-delay-to-live
@@ -164,22 +257,17 @@ Adjusts the button with the text "Live", which resets the delay to 0. To adjust 
 Example:
 ```
 mycrocast-floating-button-player::part(mcc-delay-to-live) {
-    --color: black;
+    --color: #ff2000;
 }
 ```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e580fa31-abe0-474b-9411-051c266fd2c1)
 
 
 #### mcc-delay-bar-wrapper
 
 Affects the delay bar in the delay menu as a whole. Can be used to define the background color and margins/paddings to other elements
-
-Example:
-```
-mycrocast-floating-button-player::part(mcc-delay-bar-wrapper) {
-    background-color: white;
-    margin-left: 3em;
-}
-```
 &nbsp;
 
 #### mcc-delay-bar-buffered
@@ -189,6 +277,25 @@ Adjusts the indicator in the delay bar that shows how much audio data is current
 
 #### mcc-delay-bar-current
 Adjusts the indicator in the delay bar that shows how long the current delay is. Behaves similarly to mcc-delay-bar-wrapper
+&nbsp;
+
+Example editing all delay-bar-classes:
+```
+mycrocast-floating-button-player::part(mcc-delay-bar-wrapper) {
+    background-color: #bb2222;
+}
+
+mycrocast-floating-button-player::part(mcc-delay-bar-buffered) {
+    background-color: #ff2000;
+}
+
+mycrocast-floating-button-player::part(mcc-delay-bar-current) {
+    background-color: #ff8888;
+}
+```
+
+Result:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/15ef8245-575b-497d-9281-9a80fbba14e6)
 &nbsp;
 
 ## Full example with variables
