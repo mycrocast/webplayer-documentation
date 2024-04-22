@@ -19,14 +19,13 @@ The CSS style of the website should embed the variables similar to the following
 
 ```
 mycrocast-floating-button-player {
-    --mcc-player-background-color: red;
-    --mcc-player-font-color: white;
-	
-    --mcc-player-delay-bar-background: darkblue;
-    --mcc-player-delay-bar-buffer: blue;
-    --mcc-player-delay-bar-current: lightblue;
+    --mcc-player-background-color: #555555;  
+    --mcc-player-font-color: #ff2e2e;
+  
+    --mcc-player-delay-bar-background: #bb2222;  
+    --mcc-player-delay-bar-buffer: #ff2e2e;  
+    --mcc-player-delay-bar-current: #ff8888;
 }
-
 ```  
 
 Not all variables need to be defined.
@@ -45,7 +44,7 @@ mcc-floating-button-player::part(mcc-player-initial-button) {
   
 Here, ```mcc-player-initial-button``` can be replaced by one of the class names defined on the following pages in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, ```width```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
 
-#### mcc-player-initial-button
+### mcc-player-initial-button
 Adjusts the properties of the button shown initially when a stream is available. The class can be used to change its size as well.
 
 Example:
@@ -61,7 +60,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b977504c-eff1-46d1-a651-e4347f33ff8a)
 &nbsp;
 
-#### mcc-player-content-wrapper
+### mcc-player-content-wrapper
 Adjusts the properties of the stream view after the listener clicked on the initial button. The class can be used to change the dimensions of the stream view as well.
 
 Example:
@@ -77,7 +76,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3acba4d3-c6d5-4c45-8f42-7d0bd2d2a093)
 &nbsp;
 
-#### mcc-stream-title
+### mcc-stream-title
 Adjusts the properties of the stream title.
 
 Example:
@@ -91,7 +90,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0a41b261-d5c3-4a2e-81b6-84698da4357b)
 &nbsp;
 
-#### mcc-stream-language
+### mcc-stream-language
 Adjusts the properties of the stream language.
 
 Example:
@@ -105,7 +104,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9b01666b-6391-475b-b8d1-9be22ddca908)
 &nbsp;
 
-#### mcc-listener-count
+### mcc-listener-count
 Adjusts the properties of the listener icon, the listener count and the dash between the language and the listener-icon.
 
 Example:
@@ -119,7 +118,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3d6c811a-a22f-49b4-a64b-351b5f86b6bc)
 &nbsp;
 
-#### mcc-play-pause-controls
+### mcc-play-pause-controls
 Changes the properties of the play/pause-button within the stream view. Affects both the icon and the text besides it.
 
 Example:
@@ -133,7 +132,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2acfa4e6-5ee4-421e-9ff2-0b1956c15a9c)
 &nbsp;
 
-#### mcc-stop-listen-button
+### mcc-stop-listen-button
 Changes the property of the stop-listen-button within the stream view. Affects both the icon and the text besides it.
 
 Example:
@@ -147,7 +146,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0b54115d-05df-47f2-bc41-ffb94ef961f5)
 &nbsp;
 
-#### mcc-next-stream-button
+### mcc-next-stream-button
 Changes the properties of the next-stream-button within the stream view. Affects both the icon and the text besides it.
 
 Example:
@@ -161,7 +160,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/7265a2ad-92af-474d-a0ca-4e3fda246bc7)
 &nbsp;
 
-#### mcc-spot-item
+### mcc-spot-item
 Changes the properties of the spot title and the text "to be continued shortly" when a spot is being played.
 
 Example:
@@ -176,7 +175,7 @@ Result:
 
 &nbsp;
 
-#### mcc-player-content-close
+### mcc-player-content-close
 Changes the properties of the close icon on the top right of the stream view.
 
 Example:
@@ -191,7 +190,7 @@ Result:
 
 &nbsp;
 
-#### mcc-message-info
+### mcc-message-info
 The listener is occasionally shown status messages while listening, e.g. when the streamer is muted. The class customizes this status message.
 
 Example:
@@ -206,7 +205,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/29199e60-4798-42cd-b829-ae739af51f93)
 &nbsp;
 
-#### mcc-message-danger
+### mcc-message-danger
 Displayed if there is a problem with the transmission. Behaves like mcc-message-info.
 
 Example:
@@ -221,7 +220,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4a56bdfe-77d5-428a-8140-fb354f849fd0)
 &nbsp;
 
-#### mcc-delay-current
+### mcc-delay-current
 Adjusts properties of the element displaying the current delay in seconds besides the delay bar.
 
 Example:
@@ -236,7 +235,7 @@ Result:
 
 &nbsp;
 
-#### mcc-delay-rewind-1s
+### mcc-delay-rewind-1s
 Adjusts the button that increases the delay by one second. For the other buttons that set the delay, the classes are ```mcc-delay-rewind-5s```, ```mcc-delay-rewind-30s```, ```mcc-delay-forward-5s```, ```mcc-delay-forward-1s```, where "rewind" stands for increasing and "forward" for decreasing the delay.
 
 Example for one of the buttons:
@@ -250,7 +249,7 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/bf8456cf-0174-49de-b4f8-934e7ed4ee1b)
 &nbsp;
 
-#### mcc-delay-to-live
+### mcc-delay-to-live
 
 Adjusts the button with the text "Live", which resets the delay to 0. To adjust the color, the variable ```--color``` must be set here!
 
@@ -265,17 +264,17 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e580fa31-abe0-474b-9411-051c266fd2c1)
 
 
-#### mcc-delay-bar-wrapper
+### mcc-delay-bar-wrapper
 
 Affects the delay bar in the delay menu as a whole. Can be used to define the background color and margins/paddings to other elements
 &nbsp;
 
-#### mcc-delay-bar-buffered
+### mcc-delay-bar-buffered
 
 Adjusts the indicator in the delay bar that shows how much audio data is currently buffered. Behaves similarly to mcc-delay-bar-wrapper
 &nbsp;
 
-#### mcc-delay-bar-current
+### mcc-delay-bar-current
 Adjusts the indicator in the delay bar that shows how long the current delay is. Behaves similarly to mcc-delay-bar-wrapper
 &nbsp;
 
