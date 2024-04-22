@@ -56,7 +56,9 @@ mycrocast-floating-button-player::part(mcc-player-initial-button) {
     border: 2px solid #ff2000;
 }
 ```
+
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b977504c-eff1-46d1-a651-e4347f33ff8a)
 &nbsp;
 
@@ -73,6 +75,7 @@ mycrocast-floating-button-player::part(mcc-player-content-wrapper) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3acba4d3-c6d5-4c45-8f42-7d0bd2d2a093)
 &nbsp;
 
@@ -87,6 +90,7 @@ mycrocast-floating-button-player::part(mcc-stream-title) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0a41b261-d5c3-4a2e-81b6-84698da4357b)
 &nbsp;
 
@@ -101,6 +105,7 @@ mycrocast-floating-button-player::part(mcc-stream-language) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9b01666b-6391-475b-b8d1-9be22ddca908)
 &nbsp;
 
@@ -115,6 +120,7 @@ mycrocast-floating-button-player::part(mcc-listener-count) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3d6c811a-a22f-49b4-a64b-351b5f86b6bc)
 &nbsp;
 
@@ -129,6 +135,7 @@ mycrocast-floating-button-player::part(mcc-play-pause-controls) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2acfa4e6-5ee4-421e-9ff2-0b1956c15a9c)
 &nbsp;
 
@@ -136,6 +143,7 @@ Result:
 Changes the property of the stop-listen-button within the stream view. Affects both the icon and the text besides it.
 
 Example:
+
 ```
 mycrocast-floating-button-player::part(mcc-stop-listen-button) {  
     color: #ff2000;  
@@ -143,6 +151,7 @@ mycrocast-floating-button-player::part(mcc-stop-listen-button) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0b54115d-05df-47f2-bc41-ffb94ef961f5)
 &nbsp;
 
@@ -157,6 +166,7 @@ mycrocast-floating-button-player::part(mcc-next-stream-button) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/7265a2ad-92af-474d-a0ca-4e3fda246bc7)
 &nbsp;
 
@@ -171,6 +181,7 @@ mycrocast-floating-button-player::part(mcc-spot-item) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e7621c4a-3a89-4a5f-a2cf-071c5dadb9d7)
 
 &nbsp;
@@ -186,6 +197,7 @@ mycrocast-floating-button-player::part(mcc-player-content-close) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/08070079-0081-4371-a1a6-5364512d7250)
 
 &nbsp;
@@ -202,6 +214,7 @@ mycrocast-floating-button-player::part(mcc-message-info) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/29199e60-4798-42cd-b829-ae739af51f93)
 &nbsp;
 
@@ -217,6 +230,7 @@ mycrocast-floating-button-player::part(mcc-message-danger) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4a56bdfe-77d5-428a-8140-fb354f849fd0)
 &nbsp;
 
@@ -231,6 +245,7 @@ mycrocast-floating-button-player::part(mcc-delay-current) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/cd5ca8ef-7db2-4c49-8f00-a96b4edf70e8)
 
 &nbsp;
@@ -246,6 +261,7 @@ mycrocast-floating-button-player::part(mcc-delay-rewind-1s) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/bf8456cf-0174-49de-b4f8-934e7ed4ee1b)
 &nbsp;
 
@@ -261,6 +277,7 @@ mycrocast-floating-button-player::part(mcc-delay-to-live) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e580fa31-abe0-474b-9411-051c266fd2c1)
 
 
@@ -294,6 +311,7 @@ mycrocast-floating-button-player::part(mcc-delay-bar-current) {
 ```
 
 Result:
+
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/15ef8245-575b-497d-9281-9a80fbba14e6)
 &nbsp;
 
