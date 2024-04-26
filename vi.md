@@ -10,7 +10,7 @@ CSS variables can only be used to adjust the colors of the web player. Standard 
 |Variable|Explanation|
 |----|----|
 | mcc-player-background-color | Adjusts the background color of the button and the content view. |
-| mcc-player-header-color | Adjusts the background color of the webplayer header which contains the mycrocast logo. |
+| mcc-player-header-color | Adjusts the background color of the webplayer header which contains the mycrocast logo. This is the one and only option to change the header's appearance, since we do NOT provide a shadow part below.|
 | mcc-player-font-color | Adjusts the font color of the player, including all icons. Also sets the color of the border of the content view. |
 | mcc-player-stream-background | Adjusts the background color of the stream items. |
 | mcc-player-overlay-color | Adjusts the background color of the advertisement overlay. The overlay is a little transparent by default. |
@@ -36,3 +36,30 @@ mycrocast-floating-button-player {
 Not all variables need to be defined.
 
 &nbsp;
+
+### Adjustments to other properties
+
+A CSS class or a CSS shadow part can be overwritten as follows:
+
+```
+mycrocast-vi-button-player::part(mcc-vi-player-viewport) {
+    /* define custom styles here */
+}
+```
+  
+Here, ```mcc-vi-player-viewport``` can be replaced by one of the class names defined below in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, ```width```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
+
+### mcc-vi-player-viewport
+Can be used to adjust the height, width and shape of the player. Also can be used to set the background color of the header by setting the ```background-color``` property
+
+Example:
+```
+mycrocast-vi-player::part(mcc-vi-player-viewport) {  
+    background-color: #555555;
+    width: 600px;
+    border-radius: 1em;
+}
+```
+
+Result:
+

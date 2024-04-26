@@ -57,7 +57,7 @@ mcc-lite-player::part(mcc-lite-player-viewport) {
 }
 ```
   
-Here, "mcc-lite-player-viewport" can be replaced by one of the class names defined on the following pages in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
+Here, "mcc-lite-player-viewport" can be replaced by one of the class names defined below in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
 &nbsp;
 
 ### mcc-lite-player-viewport
