@@ -69,7 +69,7 @@ Can be used to adjust the container which contains the available streams.
 Example:
 ```
 mycrocast-vi-player::part(mcc-stream-container) {
-    color: #555555;
+    background-color: #555555;
 }
 ```
 
@@ -81,12 +81,14 @@ Can be used to adjust the text that is shown when no stream is available.
 
 ```
 mycrocast-vi-player::part(mcc-stream-placeholder) {
-    background-color: #ff2000;
+    color: #ff2000;
 }
 ```
 
 ### mcc-stream-item
 Can be used to adjust the properties of the stream items as a whole.
+
+Example:
 
 ```
 mycrocast-vi-player::part(mcc-stream-item) {
@@ -94,16 +96,29 @@ mycrocast-vi-player::part(mcc-stream-item) {
 }
 ```
 
+In case you want to adjust the behavior of the stream highlighting, you can add the ```active``` and ```hover``` pseudo-classes to the shadow part.
+
+Example:
+
+```
+
+```
+
 Result:
 
 
 ### mcc-stream-title
 Adjusts the properties of the stream title within the stream items.
+
+Example:
+
 ```
 mycrocast-vi-player::part(mcc-stream-title) {
     color: white;
 }
 ```
+
+
 
 Result:
 
@@ -120,15 +135,26 @@ Result:
 
 
 ### mcc-play-pause-controls
-Adjusts the properties of the play, pause and loading button within the stream item.
+Adjusts the properties of the play, pause and loading button within the stream item. The size of the icons can be adjusted with the ```--icon-size``` variable.
 ```
 mycrocast-vi-player::part(mcc-play-pause-controls) {
+    --icon-size: 1em
     color: white;
 }
 ```
 
 Result:
 
+### mcc-icon-play
+When adjusting the ```--icon-size``` variable in ```mcc-play-pause-controls```, it may occur that the play icon does not seem to be in the middle of the button anymore. This class can be used to fine-tune the properties of this specific icon.
+
+Example:
+```
+mycrocast-vi-player::part(mcc-message-info) {
+    color: ff2000;
+	background-color: white;
+}
+```
 
 ### mcc-message-info
 The listener is occasionally shown status messages while listening, e.g. when the streamer is muted. The class customizes these status messages.
@@ -157,5 +183,7 @@ Result:
 When an advertisement is played during the stream, an overlay appears over the stream items, showing the remaining time of the advertisement break. This class can be used to adjust the properties of the overlay.
 
 ```
-mycrocast-vi-player::part(mcc-spot-overlay-wrapper)
+mycrocast-vi-player::part(mcc-spot-overlay-wrapper) {
+    background-color: #ff2000;
+}
 ```
