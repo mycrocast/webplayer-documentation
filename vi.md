@@ -63,3 +63,99 @@ mycrocast-vi-player::part(mcc-vi-player-viewport) {
 
 Result:
 
+### mcc-stream-container
+Can be used to adjust the container which contains the available streams.
+
+Example:
+```
+mycrocast-vi-player::part(mcc-stream-container) {
+    color: #555555;
+}
+```
+
+Result:
+
+
+### mcc-stream-placeholder
+Can be used to adjust the text that is shown when no stream is available.
+
+```
+mycrocast-vi-player::part(mcc-stream-placeholder) {
+    background-color: #ff2000;
+}
+```
+
+### mcc-stream-item
+Can be used to adjust the properties of the stream items as a whole.
+
+```
+mycrocast-vi-player::part(mcc-stream-item) {
+    background-color: #ff2000;
+}
+```
+
+Result:
+
+
+### mcc-stream-title
+Adjusts the properties of the stream title within the stream items.
+```
+mycrocast-vi-player::part(mcc-stream-title) {
+    color: white;
+}
+```
+
+Result:
+
+
+### mcc-stream-language
+Adjusts the properties of the stream language within the stream items.
+```
+mycrocast-vi-player::part(mcc-stream-language) {
+    color: white;
+}
+```
+
+Result:
+
+
+### mcc-play-pause-controls
+Adjusts the properties of the play, pause and loading button within the stream item.
+```
+mycrocast-vi-player::part(mcc-play-pause-controls) {
+    color: white;
+}
+```
+
+Result:
+
+
+### mcc-message-info
+The listener is occasionally shown status messages while listening, e.g. when the streamer is muted. The class customizes these status messages.
+```
+mycrocast-vi-player::part(mcc-message-info) {
+    color: ff2000;
+	background-color: white;
+}
+```
+
+Result:
+
+
+### mcc-message-danger
+Displayed if there is a problem with the transmission. Behaves like mcc-message-info.
+```
+mycrocast-vi-player::part(mcc-message-danger) {
+    background-color: darkred;
+	color: white;
+}
+```
+
+Result:
+
+### mcc-spot-overlay-wrapper
+When an advertisement is played during the stream, an overlay appears over the stream items, showing the remaining time of the advertisement break. This class can be used to adjust the properties of the overlay.
+
+```
+mycrocast-vi-player::part(mcc-spot-overlay-wrapper)
+```
