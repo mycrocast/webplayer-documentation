@@ -1,4 +1,4 @@
-# Visual-Impaired Webplayer
+# Visually-Impaired Webplayer
 
 ## Adjust Player Elements
 You can make adjustments to parts of the webplayer using CSS. The styles can be added via a ```<style>``` tag in the ```<body>```, or via an external stylesheet that is imported in the ```<head>```. Adjustments are made by setting CSS variables or by modifying shadow DOM parts. You can find fully implemented examples for both at the end of this page.
@@ -72,21 +72,31 @@ Can be used to adjust the container which contains the available streams.
 Example:
 ```
 mycrocast-vi-player::part(mcc-stream-container) {
-    background-color: #555555;
+    background-color: #ff2000;
+    padding: 2em;
 }
 ```
 
 Result:
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3dc1e31d-460d-4df1-b798-7391c6c3eec5)
+&nbsp;
 
 ### mcc-stream-placeholder
 Can be used to adjust the text that is shown when no stream is available.
+
+Example:
 
 ```
 mycrocast-vi-player::part(mcc-stream-placeholder) {
     color: #ff2000;
 }
 ```
+
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/87fc4013-bbe9-4a9b-9b12-336e664e312b)
+
 
 ### mcc-stream-item
 Can be used to adjust the properties of the stream items as a whole.
@@ -99,16 +109,26 @@ mycrocast-vi-player::part(mcc-stream-item) {
 }
 ```
 
-In case you want to adjust the behavior of the stream highlighting, you can add the ```active``` and ```hover``` pseudo-classes to the shadow part.
+In case you want to adjust the behavior of the stream highlighting, you can add the ```hover``` pseudo-class to the shadow part as follows:
 
 Example:
 
 ```
-
+mycrocast-vi-player::part(mcc-stream-item):hover {
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 10px 10px white;
+}
 ```
 
-Result:
+Results:
 
+Without any highlighting:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9da34d88-ff50-4bae-b7f1-dac343ce2ab4)
+
+Hovering a stream:
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5b5c6430-cd9d-416a-8df3-e767dbb5dc59)
+
+&nbsp;
 
 ### mcc-stream-title
 Adjusts the properties of the stream title within the stream items.
@@ -117,70 +137,90 @@ Example:
 
 ```
 mycrocast-vi-player::part(mcc-stream-title) {
-    color: white;
+    color: #ff2000;
 }
 ```
 
-
-
 Result:
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a0a7222c-e1dd-43fd-9a19-7c8173171442)
+
+&nbsp;
 
 ### mcc-stream-language
 Adjusts the properties of the stream language within the stream items.
 ```
 mycrocast-vi-player::part(mcc-stream-language) {
-    color: white;
+    color: #ff2000;
 }
 ```
 
 Result:
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/31160241-3be8-408b-b629-f3ef770f9c35)
+
+&nbsp;
 
 ### mcc-play-pause-controls
 Adjusts the properties of the play, pause and loading button within the stream item. The size of the icons can be adjusted with the ```--icon-size``` variable.
 ```
 mycrocast-vi-player::part(mcc-play-pause-controls) {
     --icon-size: 1em
-    color: white;
+    color: #ff2000;
+    box-shadow: 0px 0px 10px 6.5px #ff2000;
 }
 ```
 
 Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/ec3ec5bc-3533-492d-8cda-8eee3c3b32b4)
+
+&nbsp;
 
 ### mcc-icon-play
 When adjusting the ```--icon-size``` variable in ```mcc-play-pause-controls```, it may occur that the play icon does not seem to be in the middle of the button anymore. This class can be used to fine-tune the properties of this specific icon.
 
 Example:
 ```
-mycrocast-vi-player::part(mcc-message-info) {
-    color: ff2000;
-	background-color: white;
-}
-```
-
-### mcc-message-info
-The listener is occasionally shown status messages while listening, e.g. when the streamer is muted. The class customizes these status messages.
-```
-mycrocast-vi-player::part(mcc-message-info) {
-    color: ff2000;
-	background-color: white;
+mycrocast-vi-player::part(mcc-icon-play) {
+    padding-left: 7px
 }
 ```
 
 Result:
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e0172361-817b-4372-a23d-5db8564b6890)
+
+
+### mcc-message-info
+The listener is occasionally shown status messages while listening on the top of the player, e.g. when the streamer is muted. The class customizes these status messages.
+```
+mycrocast-vi-player::part(mcc-message-info) {
+    color: ff2000;
+    background-color: white;
+}
+```
+
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a93c46e7-fcd6-4c11-bf6c-be1fb259956c)
+
+&nbsp;
 
 ### mcc-message-danger
 Displayed if there is a problem with the transmission. Behaves like mcc-message-info.
 ```
 mycrocast-vi-player::part(mcc-message-danger) {
     background-color: darkred;
-	color: white;
+    color: white;
 }
 ```
 
 Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/736a43cf-da6e-4c62-b56b-6c78cc970e89)
+
+&nbsp;
 
 ### mcc-spot-overlay-wrapper
 When an advertisement is played during the stream, an overlay appears over the stream items, showing the remaining time of the advertisement break. This class can be used to adjust the properties of the overlay.
@@ -190,3 +230,8 @@ mycrocast-vi-player::part(mcc-spot-overlay-wrapper) {
     background-color: #ff2000;
 }
 ```
+
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/1d2edd76-c93c-4fe2-acd5-227e1cd2a8c7)
+
