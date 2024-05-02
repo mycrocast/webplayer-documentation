@@ -63,6 +63,9 @@ mycrocast-vi-player::part(mcc-vi-player-viewport) {
 
 Result:
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/233871a3-0753-43cf-9994-e57784894375)
+&nbsp;
+
 ### mcc-stream-container
 Can be used to adjust the container which contains the available streams.
 
