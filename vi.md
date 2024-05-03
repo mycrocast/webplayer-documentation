@@ -20,16 +20,16 @@ CSS variables can only be used to adjust the colors of the web player. Standard 
 The CSS style of the website should embed the variables similar to the following example:
 
 ```
-mycrocast-floating-button-player {  
+mycrocast-vi-player {
     --mcc-player-background-color: #555555;  
     --mcc-player-header-color: #555555;  
     --mcc-player-font-color: #ff2000;  
-  
+    
     --mcc-player-stream-background: black;  
-  
+    
     --mcc-player-overlay-color: #ff2000;  
     --mcc-player-overlay-font-color: black;  
-    --mcc-player-highlight-color: #ff2000;
+    --mcc-player-highlight-color: #ff2000;  
 }
 ```  
 
@@ -64,6 +64,7 @@ mycrocast-vi-player::part(mcc-vi-player-viewport) {
 Result:
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/233871a3-0753-43cf-9994-e57784894375)
+
 &nbsp;
 
 ### mcc-stream-container
@@ -80,6 +81,7 @@ mycrocast-vi-player::part(mcc-stream-container) {
 Result:
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3dc1e31d-460d-4df1-b798-7391c6c3eec5)
+
 &nbsp;
 
 ### mcc-stream-placeholder
@@ -97,6 +99,7 @@ Result:
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/87fc4013-bbe9-4a9b-9b12-336e664e312b)
 
+&nbsp;
 
 ### mcc-stream-item
 Can be used to adjust the properties of the stream items as a whole.
@@ -109,6 +112,10 @@ mycrocast-vi-player::part(mcc-stream-item) {
 }
 ```
 
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9da34d88-ff50-4bae-b7f1-dac343ce2ab4)
+
 In case you want to adjust the behavior of the stream highlighting, you can add the ```hover``` pseudo-class to the shadow part as follows:
 
 Example:
@@ -120,12 +127,8 @@ mycrocast-vi-player::part(mcc-stream-item):hover {
 }
 ```
 
-Results:
+Result when hovering a stream:
 
-Without any highlighting:
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9da34d88-ff50-4bae-b7f1-dac343ce2ab4)
-
-Hovering a stream:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5b5c6430-cd9d-416a-8df3-e767dbb5dc59)
 
 &nbsp;
@@ -191,6 +194,7 @@ Result:
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e0172361-817b-4372-a23d-5db8564b6890)
 
+&nbsp;
 
 ### mcc-message-info
 The listener is occasionally shown status messages while listening on the top of the player, e.g. when the streamer is muted. The class customizes these status messages.
@@ -234,4 +238,122 @@ mycrocast-vi-player::part(mcc-spot-overlay-wrapper) {
 Result:
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/1d2edd76-c93c-4fe2-acd5-227e1cd2a8c7)
+
+&nbsp;
+
+## Full example with variables
+The following code snippet shows an example HTML page that embeds the player and adjusts its properties using CSS variables:
+
+```
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>WebplayerLiteButton</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <mycrocast-floating-button-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-floating-button-player>
+    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=VISUAL_IMPAIRED_PLAYER></script>
+    <style>
+        mycrocast-vi-player {
+            --mcc-player-background-color: #555555;  
+            --mcc-player-header-color: #555555;  
+            --mcc-player-font-color: #ff2000;  
+    
+            --mcc-player-stream-background: black;  
+    
+            --mcc-player-overlay-color: #ff2000;  
+            --mcc-player-overlay-font-color: black;  
+            --mcc-player-highlight-color: #ff2000;  
+        }
+    </style>
+</body>
+</html>
+```
+
+### Resulting player
+
+
+
+## Full example with parts
+```
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>WebplayerLiteButton</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <mycrocast-floating-button-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-floating-button-player>
+    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=FLOATING_BUTTON_PLAYER></script>
+    <style>
+        mycrocast-vi-player::part(mcc-vi-player-viewport) {  
+            background-color: #555555;  
+            width: 600px;  
+            border-radius: 1em;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-stream-container) {  
+            background-color: #ff2000;  
+            padding: 2em;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-stream-placeholder) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-stream-item) {  
+            background-color: #ff2000;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-stream-item):hover {  
+            transition: 0.5s ease;  
+            box-shadow: 0px 0px 10px 10px white;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-stream-title) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-stream-language) {  
+            color: #ff2000;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-play-pause-controls) {  
+            --icon-size: 1.5em;  
+            color: #ff2000;  
+            box-shadow: 0px 0px 10px 6.5px #ff2000;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-icon-play) {  
+            padding-left: 7px;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-message-info) {  
+            background-color: white;  
+            color: #f20000;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-message-danger) {  
+            background-color: darkred;  
+            color: white;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-spot-overlay-wrapper) {  
+            background-color: #ff2000;  
+        }
+    </style>
+</body>
+</html>
+```
 
