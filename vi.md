@@ -254,19 +254,21 @@ Result:
 
 ### mcc-loading-wrapper
 
-Can be used to set the color, padding, and other properties of the laoding animation overlay.
+Can be used to set the color, padding, and other properties of the loading animation overlay. To change the color, you have to use the ```--wrapper-color``` variable.
 
 Example:
 
 ```
 mycrocast-vi-player::part(mcc-loading-wrapper) {  
-    background-color: #ffffffaa;  
+    --wrapper-color: #ff2000dd;  
 }
 ```
 
 Result:
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2a677a65-522d-41cd-b7f8-aee2e6cabef2)
 
+&nbsp;
 
 ### mcc-loading-anim
 
@@ -276,12 +278,13 @@ Example:
 
 ```
 mycrocast-vi-player::part(mcc-loading-anim) {  
-    --color: #ff2000;  
+    --anim-color: #ff2000;  
 }
 ```
 
 Result:
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/d714e914-9437-4f86-b7a0-4c0f90ec9247)
 
 
 ## Full example with variables
