@@ -403,6 +403,14 @@ The following code snippet shows an example HTML page that embeds the player and
   
         mycrocast-vi-player::part(mcc-spot-overlay-wrapper) {  
             background-color: #ff2000;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-loading-wrapper) {  
+            --wrapper-color: #ffffffaa;  
+        }  
+  
+        mycrocast-vi-player::part(mcc-loading-anim) {  
+            --anim-color: #ff2000;  
         }
     </style>
 </body>
