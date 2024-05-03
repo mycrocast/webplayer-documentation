@@ -361,3 +361,18 @@ The following code snippet shows an example HTML page that embeds the player and
 </html>
 ```
 
+### Resulting player
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/cec0fb1f-445e-4ca1-b926-1427c76871ff)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/6b376eb7-f40f-4201-a761-1fe704c50ea9)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/d33ecea4-4c1d-4fa2-9b34-cf5bf3f26b9d)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3773dcbc-9a9a-4a85-a8fb-c7a4a4c4fde3)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2479f312-df61-4098-baa3-8fa4831942f2)
+
+
+
+
