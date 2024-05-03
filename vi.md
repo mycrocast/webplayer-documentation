@@ -429,6 +429,9 @@ The following code snippet shows an example HTML page that embeds the player and
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/2479f312-df61-4098-baa3-8fa4831942f2)
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/5c370655-0977-4b8b-958d-afa0f650605a)
+
+
 
 
 
