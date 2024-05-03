@@ -278,6 +278,10 @@ The following code snippet shows an example HTML page that embeds the player and
 
 ### Resulting player
 
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a7574b10-f96c-4363-b06a-20ad6508050c)
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3e5b0bba-dffc-4bd4-bfbe-a891aa01dd42)
+
 
 
 ## Full example with parts
