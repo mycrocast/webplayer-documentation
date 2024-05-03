@@ -13,8 +13,8 @@ CSS variables can only be used to adjust the colors of the web player. Standard 
 | mcc-player-header-color | Adjusts the background color of the webplayer header which contains the mycrocast logo. This is the one and only option to change the header's appearance, since we do NOT provide a shadow part below.|
 | mcc-player-font-color | Adjusts the font color of the player, including all icons. Also sets the color of the border of the content view. |
 | mcc-player-stream-background | Adjusts the background color of the stream items. |
-| mcc-player-overlay-color | Adjusts the background color of the advertisement overlay. The overlay is a little transparent by default. |
-| mcc-player-overlay-font-color | Adjusts the font color within the advertisement overlay. |
+| mcc-player-overlay-color | Adjusts the background color of the advertisement overlay and the loading overlay. There is some transparency added to the advertisement overlay by default. |
+| mcc-player-overlay-font-color | Adjusts the font color within the advertisement overlay and the color of the loading animation in the loading overlay. |
 | mcc-player-highlight-color | Adjusts the highlighting color of the active stream. |
 
 The CSS style of the website should embed the variables similar to the following example:
@@ -263,13 +263,13 @@ The following code snippet shows an example HTML page that embeds the player and
         mycrocast-vi-player {
             --mcc-player-background-color: #555555;  
             --mcc-player-header-color: #555555;  
-            --mcc-player-font-color: #ff2000;  
-    
-            --mcc-player-stream-background: black;  
-    
-            --mcc-player-overlay-color: #ff2000;  
-            --mcc-player-overlay-font-color: black;  
-            --mcc-player-highlight-color: #ff2000;  
+            --mcc-player-font-color: white;  
+  
+            --mcc-player-stream-background: #ff2000;  
+  
+            --mcc-player-overlay-color: #ffffffaa;  
+            --mcc-player-overlay-font-color: #ff2000;  
+            --mcc-player-highlight-color: white; 
         }
     </style>
 </body>
