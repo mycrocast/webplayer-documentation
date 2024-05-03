@@ -152,6 +152,8 @@ Result:
 
 ### mcc-stream-language
 Adjusts the properties of the stream language within the stream items.
+
+Example:
 ```
 mycrocast-vi-player::part(mcc-stream-language) {
     color: #ff2000;
@@ -166,6 +168,8 @@ Result:
 
 ### mcc-play-pause-controls
 Adjusts the properties of the play, pause and loading button within the stream item. The size of the icons can be adjusted with the ```--icon-size``` variable.
+
+Example:
 ```
 mycrocast-vi-player::part(mcc-play-pause-controls) {
     --icon-size: 1em
@@ -198,6 +202,8 @@ Result:
 
 ### mcc-message-info
 The listener is occasionally shown status messages while listening on the top of the player, e.g. when the streamer is muted. The class customizes these status messages.
+
+Example:
 ```
 mycrocast-vi-player::part(mcc-message-info) {
     color: ff2000;
@@ -213,6 +219,9 @@ Result:
 
 ### mcc-message-danger
 Displayed if there is a problem with the transmission. Behaves like mcc-message-info.
+
+Example:
+
 ```
 mycrocast-vi-player::part(mcc-message-danger) {
     background-color: darkred;
@@ -229,6 +238,8 @@ Result:
 ### mcc-spot-overlay-wrapper
 When an advertisement is played during the stream, an overlay appears over the stream items, showing the remaining time of the advertisement break. This class can be used to adjust the properties of the overlay.
 
+Example:
+
 ```
 mycrocast-vi-player::part(mcc-spot-overlay-wrapper) {
     background-color: #ff2000;
@@ -240,6 +251,38 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/1d2edd76-c93c-4fe2-acd5-227e1cd2a8c7)
 
 &nbsp;
+
+### mcc-loading-wrapper
+
+Can be used to set the color, padding, and other properties of the laoding animation overlay.
+
+Example:
+
+```
+mycrocast-vi-player::part(mcc-loading-wrapper) {  
+    background-color: #ffffffaa;  
+}
+```
+
+Result:
+
+
+
+### mcc-loading-anim
+
+Adjusts the properties of the loading animation within the loading animation wrapper. To change the color you have to use the ```--color``` property.
+
+Example:
+
+```
+mycrocast-vi-player::part(mcc-loading-anim) {  
+    --color: #ff2000;  
+}
+```
+
+Result:
+
+
 
 ## Full example with variables
 The following code snippet shows an example HTML page that embeds the player and adjusts its properties using CSS variables:
