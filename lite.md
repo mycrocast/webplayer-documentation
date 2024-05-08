@@ -286,13 +286,13 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4534190b-87b2-4f52-b01c-8e0e6944508d)
 &nbsp;
 
-### mcc-loading-anim-wrapper
+### mcc-loading-wrapper
 
 Can be used to set the color, padding, and other properties of the laoding animation overlay
 
 Example: 
 ```
-mycrocast-lite-player::part(mcc-loading-anim-wrapper) {
+mycrocast-lite-player::part(mcc-loading-wrapper) {
     --color: #000000af;;
 }
 ```
@@ -302,14 +302,14 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/020fd94f-0534-4dc8-81bd-5593cb3fc029)
 &nbsp;
 
-### mcc-loading-anim
+### mcc-loading-animation
 
 Adjusts the properties of the loading animation within the loading animation wrapper.
 
 Example:
 
 ```
-mycrocast-lite-player::part(mcc-loading-anim) {
+mycrocast-lite-player::part(mcc-loading-animation) {
     --color: #ff2e2e;
 }
 ```
@@ -597,11 +597,11 @@ The following code snippet shows an example HTML page that embeds the player and
             color: #ff2e2e;  
         }
 
-        mycrocast-lite-player::part(mcc-loading-anim-wrapper) {
+        mycrocast-lite-player::part(mcc-loading-wrapper) {
             --color: #000000af;
         }
 
-        mycrocast-lite-player::part(mcc-loading-anim) {
+        mycrocast-lite-player::part(mcc-loading-animation) {
             --color: #ff2e2e;
         }
   
