@@ -270,15 +270,15 @@ Result:
 
 &nbsp;
 
-### mcc-loading-anim
+### mcc-loading-animation
 
-Adjusts the properties of the loading animation within the loading animation wrapper. To change the color you have to use the ```--color``` property.
+Adjusts the properties of the loading animation within the loading animation wrapper. To change the color you have to use the ```--animation-color``` property.
 
 Example:
 
 ```
-mycrocast-vi-player::part(mcc-loading-anim) {  
-    --anim-color: #ff2000;  
+mycrocast-vi-player::part(mcc-loading-animation) {  
+    --animation-color: #ff2000;  
 }
 ```
 
@@ -409,8 +409,8 @@ The following code snippet shows an example HTML page that embeds the player and
             --wrapper-color: #ffffffaa;  
         }  
   
-        mycrocast-vi-player::part(mcc-loading-anim) {  
-            --anim-color: #ff2000;  
+        mycrocast-vi-player::part(mcc-loading-animation) {  
+            --animation-color: #ff2000;  
         }
     </style>
 </body>
