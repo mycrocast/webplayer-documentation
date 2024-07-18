@@ -363,7 +363,11 @@ The following code snippet shows an example HTML page that embeds the player and
 
 ### Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4c4ce992-4dea-48cd-a9e5-03f810e9ff33)
+![image](https://github.com/user-attachments/assets/7c76821b-4fc2-4959-b1af-5d4ad8271ccb)
+![image](https://github.com/user-attachments/assets/33b5ef2b-d635-4dcb-ac9f-08bf88ae2c14)
+![image](https://github.com/user-attachments/assets/592e6a69-7c52-4808-8870-9780e150e6f1)
+![image](https://github.com/user-attachments/assets/616e961e-5558-4db2-8fab-7faa4b35a7a3)
+
 
 &nbsp;
 
