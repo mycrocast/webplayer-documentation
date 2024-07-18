@@ -53,17 +53,23 @@ mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
 Here, ```mcc-player-initial-button``` can be replaced by one of the class names defined on the following pages in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, ```width```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
 
 ### mcc-player-initial-button
-Adjusts the properties of the button shown initially when a stream is available. The class can be used to change its size as well.
+Adjusts the properties of the button shown initially when a stream is available. The class can be used to change its size as well. When the stream title is too long for the button to contain it, it will be cut off and replaced with "..." at the end of the element.
 
 Example:
 ```
 mycrocast-floating-button-player::part(mcc-player-initial-button) {  
     background-color: #555555;
-    width: 5em;
+    width: 16em;
     height: 5em;
     border: 2px solid #ff2000;
+	font-size: 3em;
 }
 ```
+
+Some properties, like ```padding``` and ```gap```, as well as the mycrocast logo, are scaled automatically by setting the ```font-size``` property. This simplifies the styling process, but you can also override this behavior by setting the properties that are dependent on the ```font-size```.
+
+### mcc-player-initial-button
+Can be used to additionally style the element containing the stream title within the initial button. Optionally, you can also disable the element so only the mycrocast logo is shown, resulting in less screen space taken by the initial button.
 
 Result:
 
