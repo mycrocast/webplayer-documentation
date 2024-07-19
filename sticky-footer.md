@@ -42,6 +42,8 @@ Not all variables need to be defined.
 
 ### Adjustments to other properties
 
+#### Default styles
+
 A CSS class or a CSS shadow part can be overwritten as follows:
 
 ```
@@ -51,6 +53,19 @@ mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
 ```
   
 Here, ```mcc-player-initial-button``` can be replaced by one of the class names defined on the following pages in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, ```width```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
+
+#### Responsive styles
+
+In order to render the player correctly on mobile devices, some of the provided CSS shadow parts change their behaviour based on screen size. You can change their behaviour by making use of media queries.
+
+Example:
+```
+@media screen and (max-width: 992px) {
+    mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
+        /* define custom styles for screens with a width smaller than 992px here */
+    }
+}
+```
 
 ### mcc-player-initial-button
 Adjusts the properties of the button shown initially when a stream is available. The class can be used to change its size as well. When the stream title is too long for the button to contain it, it will be cut off and replaced with "..." at the end of the element.
@@ -68,23 +83,31 @@ mycrocast-floating-button-player::part(mcc-player-initial-button) {
 
 Some properties, like ```padding``` and ```gap```, as well as the mycrocast logo, are scaled automatically by setting the ```font-size``` property. This simplifies the styling process, but you can also override this behavior by setting the properties that are dependent on the ```font-size```.
 
-### mcc-player-initial-button
-Can be used to additionally style the element containing the stream title within the initial button. Optionally, you can also disable the element so only the mycrocast logo is shown, resulting in less screen space taken by the initial button.
-
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/b977504c-eff1-46d1-a651-e4347f33ff8a)
-&nbsp;
+
+### mcc-player-initial-button-title
+Can be used to additionally style the element containing the stream title within the initial button. Optionally, you can also disable the element so only the mycrocast logo is shown, resulting in less screen space taken by the initial button.
+
+Example:
+```
+mycrocast-sticky-footer-player::part(mcc-player-initial-button-title) {  
+    display: none;
+}
+```
+
+Result:
 
 ### mcc-player-content-wrapper
 Adjusts the properties of the stream view after the listener clicked on the initial button. The class can be used to change the dimensions of the stream view as well.
 
+When you change the ```padding``` properties of the stream view, keep in mind that the default behaviour changes these properties depending on the screen size. You can overwrite this by using media queries with the according breakpoints at 425px and 1400px screen width.
+
 Example:
 ```
-mycrocast-floating-button-player::part(mcc-player-content-wrapper) {  
-    background-color: #555555;
-    border-color: #ff2000;
-    border: 2px solid #ff2000;
+mycrocast-floating-button-player::part(mcc-player-content-wrapper) {    
+    background-color: #555555;  
+    gap: 1em;
 }
 ```
 
@@ -93,13 +116,15 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3acba4d3-c6d5-4c45-8f42-7d0bd2d2a093)
 &nbsp;
 
-### mcc-stream-title
-Adjusts the properties of the stream title.
+### mcc-player-volume-button
+**NOTE: This button is currently not available and will not be shown in the stream view. It will be available in a future update.**
+
+Adjusts the properties of the button that opens the volume slider when clicking on it.
 
 Example:
 ```
-mycrocast-floating-button-player::part(mcc-stream-title) {
-    color: #ff2000;
+mycrocast-sticky-footer-player::part(mcc-player-volume-button) {  
+    color: #ff2000;  
 }
 ```
 
@@ -108,12 +133,30 @@ Result:
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0a41b261-d5c3-4a2e-81b6-84698da4357b)
 &nbsp;
 
-### mcc-stream-language
-Adjusts the properties of the stream language.
+### mcc-player-volume-slider
+**NOTE: Just like the button, the volume slider is currently not available and will not be shown in the stream view. It will be available in a future update.**
+
+Adjusts the properties of the slider that opens when clicking on the volume button.
 
 Example:
 ```
-mycrocast-floating-button-player::part(mcc-stream-language) {
+mycrocast-sticky-footer-player::part(mcc-player-volume-slider) {  
+    --color: #ff2000;
+    background-color: #555555;
+}
+```
+
+Result:
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0a41b261-d5c3-4a2e-81b6-84698da4357b)
+&nbsp;
+
+### mcc-stream-title
+Adjusts the properties of the stream title and the stream language, shown besides the volume button.
+
+Example:
+```
+mycrocast-sticky-footer-player::part(mcc-stream-title) {
     color: #ff2000;
 }
 ```
@@ -122,6 +165,16 @@ Result:
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/9b01666b-6391-475b-b8d1-9be22ddca908)
 &nbsp;
+
+### mcc-next-stream-button
+
+Adjusts the properties of the next-stream button, which is shown when multiple streams are available.
+
+```
+mycrocast-sticky-footer-player::part(mcc-player-next-stream-button) {  
+    color: #ff2000;  
+}
+```
 
 ### mcc-listener-count
 Adjusts the properties of the listener icon, the listener count and the dash between the language and the listener-icon.
