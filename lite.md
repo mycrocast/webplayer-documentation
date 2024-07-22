@@ -288,7 +288,7 @@ Result:
 
 ### mcc-loading-wrapper
 
-Can be used to set the color, padding, and other properties of the laoding animation overlay
+Can be used to set the color, padding, and other properties of the loading animation overlay
 
 Example: 
 ```
