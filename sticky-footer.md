@@ -76,7 +76,7 @@ mycrocast-floating-button-player::part(mcc-player-initial-button) {
     background-color: #555555;
     width: 30rem;
     border: 2px solid #ff2000;
-	font-size: 3em;
+    font-size: 3em;
 }
 ```
 
@@ -84,18 +84,28 @@ Some properties, like ```padding``` and ```gap```, as well as the mycrocast logo
 
 Result:
 
+![image](https://github.com/user-attachments/assets/ca0ec548-1e94-4342-84ff-6208b201d421)
+
 
 ### mcc-player-initial-button-title
 Can be used to additionally style the element containing the stream title within the initial button. Optionally, you can also disable the element so only the mycrocast logo is shown, resulting in less screen space taken by the initial button.
 
 Example:
 ```
+mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
+    background-color: #555555;
+    border: 2px solid #ff2000;
+    font-size: 3em;
+}
+
 mycrocast-sticky-footer-player::part(mcc-player-initial-button-title) {  
     display: none;
 }
 ```
 
 Result:
+![image](https://github.com/user-attachments/assets/a6ff9271-8ab8-4f66-9c38-4dd7f3ca4829)
+
 
 ### mcc-player-content-wrapper
 Adjusts the properties of the stream view after the listener clicked on the initial button. The class can be used to change the dimensions of the stream view as well.
@@ -106,13 +116,12 @@ Example:
 ```
 mycrocast-sticky-footer-player::part(mcc-player-content-wrapper) {    
     background-color: #555555;  
-    gap: 1em;
 }
 ```
 
 Result:
+![image](https://github.com/user-attachments/assets/1223da39-4399-45d7-89d1-a4bdd6c29cc3)
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/3acba4d3-c6d5-4c45-8f42-7d0bd2d2a093)
 &nbsp;
 
 ### mcc-player-volume-button
@@ -128,8 +137,8 @@ mycrocast-sticky-footer-player::part(mcc-player-volume-button) {
 ```
 
 Result:
+![image](https://github.com/user-attachments/assets/28a01d65-88de-4c6e-bd9a-282d209305e8)
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/0a41b261-d5c3-4a2e-81b6-84698da4357b)
 &nbsp;
 
 ### mcc-player-volume-slider
@@ -145,6 +154,9 @@ mycrocast-sticky-footer-player::part(mcc-player-volume-slider) {
 }
 ```
 
+Result:
+![image](https://github.com/user-attachments/assets/512604aa-7605-4ca0-9b4d-4f7569470ead)
+&nbsp;
 
 ### mcc-stream-title
 Adjusts the properties of the stream title and the stream language, shown besides the volume button.
