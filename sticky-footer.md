@@ -367,6 +367,11 @@ mycrocast-sticky-footer-player::part(mcc-loading-wrapper) {
 }
 ```
 
+Result:
+
+![image](https://github.com/user-attachments/assets/7b80da00-9505-4df7-9e3f-f569c5e305c5)
+
+&nbsp;
 
 ### mcc-loading-animation
 
@@ -379,7 +384,11 @@ mycrocast-sticky-footer-player::part(mcc-loading-animation) {
 }
 ```
 
+Result:
 
+![image](https://github.com/user-attachments/assets/080bb303-2f5e-418b-ab13-408e997ec2f9)
+
+&nbsp;
 
 ## Full example with variables
 The following code snippet shows an example HTML page that embeds the player and adjusts its properties using CSS variables:
