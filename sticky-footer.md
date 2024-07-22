@@ -282,7 +282,8 @@ mycrocast-sticky-footer-player::part(mcc-play-pause-controls) {
 
 Result:
 
-![image](https://github.com/user-attachments/assets/90a2647a-8631-4e74-81e7-9d34b5179a82)
+![image](https://github.com/user-attachments/assets/a74df488-0a02-496f-bcc6-dc124d5a0684)
+
 &nbsp;
 
 ### mcc-minimize-player-button
@@ -315,7 +316,8 @@ mycrocast-sticky-footer-player::part(mcc-spot-item) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e7621c4a-3a89-4a5f-a2cf-071c5dadb9d7)
+![image](https://github.com/user-attachments/assets/94764870-68ef-408b-b0ef-6a71377ba688)
+
 
 &nbsp;
 
@@ -332,7 +334,8 @@ mycrocast-sticky-footer-player::part(mcc-message-info) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/29199e60-4798-42cd-b829-ae739af51f93)
+![image](https://github.com/user-attachments/assets/b660c22c-879d-43c3-be0d-a9d5955fd622)
+
 &nbsp;
 
 ### mcc-message-danger
@@ -348,7 +351,8 @@ mycrocast-sticky-footer-player::part(mcc-message-danger) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/4a56bdfe-77d5-428a-8140-fb354f849fd0)
+![image](https://github.com/user-attachments/assets/943d88ca-e07f-49db-a907-91b17b2bddc0)
+
 &nbsp;
 
 
