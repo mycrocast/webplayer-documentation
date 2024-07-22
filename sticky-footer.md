@@ -167,7 +167,11 @@ mycrocast-sticky-footer-player::part(mcc-stream-title) {
     color: #ff2000;
 }
 ```
+Result:
 
+![image](https://github.com/user-attachments/assets/191cbf1e-44b5-4d0e-a392-9fc2aa494ffd)
+
+&nbsp;
 
 ### mcc-next-stream-button
 
@@ -179,6 +183,11 @@ mycrocast-sticky-footer-player::part(mcc-player-next-stream-button) {
 }
 ```
 
+Result:
+
+![image](https://github.com/user-attachments/assets/f73053c6-1ca7-4101-bba4-62d0402f51ce)
+&nbsp;
+
 ### mcc-delay-current
 Adjusts properties of the element displaying the current delay in seconds besides the delay bar.
 
@@ -188,6 +197,11 @@ mycrocast-sticky-footer-player::part(mcc-delay-current) {
     color: #ff2000;  
 }
 ```
+
+Result:
+
+![image](https://github.com/user-attachments/assets/580d01eb-bbc7-4908-b9a2-7158cb11ae8d)
+&nbsp;
 
 ### mcc-delay-bar-wrapper
 
@@ -217,6 +231,11 @@ mycrocast-sticky-footer-player::part(mcc-delay-bar-current) {
     background-color: #ff8888;
 }
 ```
+
+Result:
+
+![image](https://github.com/user-attachments/assets/66d793bd-79ab-4ccd-95dd-053c4293a1c2)
+&nbsp;
 
 ### mcc-delay-to-live
 
