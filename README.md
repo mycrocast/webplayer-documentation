@@ -23,6 +23,11 @@ We provide three different players you can choose from.
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/06ed7946-6b95-415f-b3d5-b1a382c3b9e1)
 &nbsp;
 
+### New-Tab Webplayer
+
+![image](https://github.com/user-attachments/assets/1f55de9d-e5dd-4f16-91bb-ff3aff1c19af)
+&nbsp;
+
 ## Embed Script
 
 The following script needs to be copied and inserted anywhere within the ```<body>``` of your website. Please replace the ```LITE_PLAYER``` tag in the ```player=LITE_PLAYER``` attribute with the tag according to your player from the list below.
@@ -41,6 +46,7 @@ The following script needs to be copied and inserted anywhere within the ```<bod
 | Webplayer Lite | LITE_PLAYER |
 | Webplayer Floating-Button | FLOATING_BUTTON_PLAYER |
 | Visual-Impaired Webplayer | VISUAL_IMPAIRED_PLAYER |
+| New-Tab Webplayer | FLOATING_BUTTON_TAB_PLAYER |
 
 ## Embed Webplayer
 
@@ -72,6 +78,14 @@ The following HTML snippets show what the player tags need to look like. They ne
 ```
 &nbsp;
 
+#### New-Tab Webplayer
+```
+<mycrocast-floating-button-tab-player
+    token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
+</mycrocast-floating-button-tab-player>
+```
+&nbsp;
+
 ### Obtaining the club token from the mycrocast platform
 
 1. Log in with your club account.
@@ -91,5 +105,6 @@ We provide means to customize the webplayer to your needs. Since the elements an
 
 1. [Webplayer Lite](https://mycrocast.github.io/webplayer-documentation/lite)
 2. [Floating-Button Webplayer](https://mycrocast.github.io/webplayer-documentation/floating)
+2. [New-Tab Webplayer](https://mycrocast.github.io/webplayer-documentation/new-tab)
 
 
