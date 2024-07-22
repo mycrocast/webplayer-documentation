@@ -25,10 +25,10 @@ mycrocast-sticky-footer-player {
     --mcc-player-background-color: #555555;  
     --mcc-player-font-color: #ff2e2e;
 	  
-	--mcc-player-overlay-color: #ffffffaf;  
-	--mcc-player-overlay-font-color: #ff2e2e;  
+    --mcc-player-overlay-color: #ffffffaf;  
+    --mcc-player-overlay-font-color: #ff2e2e;  
   
-	--mcc-player-button-disabled-color: #bb2222;
+    --mcc-player-button-disabled-color: #bb2222;
   
     --mcc-player-delay-bar-background: #bb2222;  
     --mcc-player-delay-bar-buffer: #ff2e2e;  
@@ -248,6 +248,11 @@ mycrocast-sticky-footer-player::part(mcc-delay-to-live) {
 }
 ```
 
+Result:
+
+![image](https://github.com/user-attachments/assets/1fbe6565-cab3-4ea9-9a46-0666fd29632e)
+&nbsp;
+
 
 ### mcc-delay-rewind-1s
 Adjusts the button that increases the delay by one second. For the other buttons that set the delay, the classes are ```mcc-delay-rewind-5s```, ```mcc-delay-rewind-30s```, ```mcc-delay-forward-5s```, ```mcc-delay-forward-1s```, where "rewind" stands for increasing and "forward" for decreasing the delay.
@@ -255,9 +260,14 @@ Adjusts the button that increases the delay by one second. For the other buttons
 Example for one of the buttons:
 ```
 mycrocast-sticky-footer-player::part(mcc-delay-rewind-1s) {  
-    color: black;  
+    color: #ff2000;  
 }
 ```
+
+Result:
+
+![image](https://github.com/user-attachments/assets/1d05f6b1-dc3c-4082-b3f3-110dee2f2ea5)
+&nbsp;
 
 
 ### mcc-play-pause-controls
@@ -269,6 +279,11 @@ mycrocast-sticky-footer-player::part(mcc-play-pause-controls) {
     color: #ff2000;  
 }
 ```
+
+Result:
+
+![image](https://github.com/user-attachments/assets/90a2647a-8631-4e74-81e7-9d34b5179a82)
+&nbsp;
 
 ### mcc-minimize-player-button
 Changes the properties of the close icon on the top right of the stream view.
@@ -282,7 +297,8 @@ mycrocast-sticky-footer-player::part(mcc-minimize-player-button) {
 
 Result:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/08070079-0081-4371-a1a6-5364512d7250)
+![image](https://github.com/user-attachments/assets/cbaf1165-8163-4938-ad16-61893097f864)
+
 
 &nbsp;
 
