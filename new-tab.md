@@ -1,4 +1,12 @@
 # New-Tab-Button Webplayer
+setting the targetURL attribute will open that url in a new tab instead of the default url that links to the [VI-player](https://mycrocast.github.io/webplayer-documentation/vi)
+
+```
+<mycrocast-floating-button-tab-player
+    targetURL="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/player-demo.html?player=LITE_PLAYER&token=1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"
+    token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
+</mycrocast-floating-button-tab-player>
+```
 
 ## Adjust Player Elements
 You can make adjustments to parts of the webplayer using CSS. The styles can be added via a ```<style>``` tag in the ```<body>```, or via an external stylesheet that is imported in the ```<head>```. Adjustments are made by setting CSS variables or by modifying shadow DOM parts. You can find fully implemented examples for both at the end of this page.
