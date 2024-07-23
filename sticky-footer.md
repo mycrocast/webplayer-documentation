@@ -430,8 +430,13 @@ The following code snippet shows an example HTML page that embeds the player and
 
 ### Result:
 
-!
+![image](https://github.com/user-attachments/assets/d95e70bd-f26f-49e3-84f9-a64381cbff79)
 
+![image](https://github.com/user-attachments/assets/360d4bc8-82bf-46b3-8e1e-59fde4562aef)
+
+![image](https://github.com/user-attachments/assets/8aa9533b-a64a-475b-8377-9ac90c97682d)
+
+![image](https://github.com/user-attachments/assets/1312a546-829f-4201-9d83-0621bc8e4a43)
 
 &nbsp;
 
