@@ -559,11 +559,16 @@ The following code snippet shows an example HTML page that embeds the player and
 
 ### Resulting player:
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/27246203-39e6-47fe-8ee7-d2e3f4631dce)
+![image](https://github.com/user-attachments/assets/84415576-9176-486d-bb79-f8aabf694ba5)
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a362cbf1-4368-4b16-91e8-f2e5c8cb3352)
+![image](https://github.com/user-attachments/assets/13adf069-7273-48f2-97fc-f7400bc645c8)
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/e2ab440f-7757-4cde-b5f4-d094dd98f146)
+![image](https://github.com/user-attachments/assets/07ff53dc-0cd8-4c32-9cec-37fff5062940)
 
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/c5427e73-75c4-4d2b-a3be-7c6dfd2baba9)
+![image](https://github.com/user-attachments/assets/d0b663c8-f61a-4729-a3ee-ad6b1a764b26)
+
+![image](https://github.com/user-attachments/assets/8cbe268e-05e1-42d0-b371-f881d8f9da38)
+
+![image](https://github.com/user-attachments/assets/8ac8de21-c418-4803-bd8f-c829f9de721a)
+
 
