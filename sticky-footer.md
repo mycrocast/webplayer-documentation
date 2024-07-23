@@ -1,16 +1,16 @@
-# Floating-Button Webplayer
+# Sticky-Footer Webplayer
 
 ## Adjust Player Elements
 You can make adjustments to parts of the webplayer using CSS. The styles can be added via a ```<style>``` tag in the ```<body>```, or via an external stylesheet that is imported in the ```<head>```. Adjustments are made by setting CSS variables or by modifying shadow DOM parts. You can find fully implemented examples for both at the end of this page.
 
 ### Adjustment of colors using CSS variables
 
-CSS variables can only be used to adjust the colors of the web player. Standard CSS colors, but also hexadecimal codes and RGBA colors can be used as colors. The following variables are defined:
+The following CSS variables can only be used to adjust the colors of the web player. Standard CSS colors, but also hexadecimal codes and RGBA colors can be used as colors. The following variables are defined:
 
 |Variable|Explanation|
 |----|----|
-| mcc-player-background-color | Adjusts the background color of the button and the content view. |
-| mcc-player-font-color | Adjusts the font color of the player, including all icons. Also sets the color of the border of the content view. |
+| mcc-player-background-color | Adjusts the background color of the button and the stream view. |
+| mcc-player-font-color | Adjusts the font color of the player, including all icons. |
 | mcc-player-overlay-color | Adjusts the background color of the loading overlay and the spot overlay. |
 | mcc-player-overlay-font-color | Adjusts the animation color in the loading overlay and the font color of the spot overlay|
 | mcc-player-button-disabled-color | Adjusts the color of disabled buttons in the player. |
@@ -23,7 +23,7 @@ The CSS style of the website should embed the variables similar to the following
 ```
 mycrocast-sticky-footer-player {
     --mcc-player-background-color: #555555;  
-    --mcc-player-font-color: #ff2e2e;
+    --mcc-player-font-color: #ff2000;
 	  
     --mcc-player-overlay-color: #ffffffaf;  
     --mcc-player-overlay-font-color: #ff2e2e;  
@@ -31,7 +31,7 @@ mycrocast-sticky-footer-player {
     --mcc-player-button-disabled-color: #bb2222;
   
     --mcc-player-delay-bar-background: #bb2222;  
-    --mcc-player-delay-bar-buffer: #ff2e2e;  
+    --mcc-player-delay-bar-buffer: #ff2000;  
     --mcc-player-delay-bar-current: #ff8888;
 }
 ```  
@@ -412,15 +412,15 @@ The following code snippet shows an example HTML page that embeds the player and
 
         mycrocast-sticky-footer-player {
             --mcc-player-background-color: #555555;  
-            --mcc-player-font-color: #ff2e2e;
+            --mcc-player-font-color: #ff2000;
 	  
-	        --mcc-player-overlay-color: #ffffffaf;  
-	        --mcc-player-overlay-font-color: #ff2e2e;  
-  
-	        --mcc-player-button-disabled-color: #bb2222;
+            --mcc-player-overlay-color: #ffffffaf;  
+            --mcc-player-overlay-font-color: #ff2e2e;  
+   
+            --mcc-player-button-disabled-color: #bb2222;
   
             --mcc-player-delay-bar-background: #bb2222;  
-            --mcc-player-delay-bar-buffer: #ff2e2e;  
+            --mcc-player-delay-bar-buffer: #ff2000;  
             --mcc-player-delay-bar-current: #ff8888;
 }
     </style>
@@ -430,10 +430,7 @@ The following code snippet shows an example HTML page that embeds the player and
 
 ### Result:
 
-![image](https://github.com/user-attachments/assets/7c76821b-4fc2-4959-b1af-5d4ad8271ccb)
-![image](https://github.com/user-attachments/assets/33b5ef2b-d635-4dcb-ac9f-08bf88ae2c14)
-![image](https://github.com/user-attachments/assets/592e6a69-7c52-4808-8870-9780e150e6f1)
-![image](https://github.com/user-attachments/assets/616e961e-5558-4db2-8fab-7faa4b35a7a3)
+!
 
 
 &nbsp;
