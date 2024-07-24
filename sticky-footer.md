@@ -454,115 +454,115 @@ The following code snippet shows an example HTML page that embeds the player and
 </head>
 
 <body>
-    <mycrocast-floating-button-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-floating-button-player>
-    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=FLOATING_BUTTON_PLAYER></script>
+    <mycrocast-sticky-footer-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-sticky-footer-player>
+    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=STICKY_FOOTER_PLAYER></script>
     <style>
         mycrocast-sticky-footer-player::part(mcc-player-initial-button) {  
-  background-color: #555555;  
-  border: 2px solid #ff2000;  
-  font-size: 3em;  
-}  
+            background-color: #555555;  
+            border: 2px solid #ff2000;  
+            font-size: 3em;  
+        }  
   
- mycrocast-sticky-footer-player::part(mcc-player-initial-button-title) {  
-  display: none;  
-  font-size: 1em;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-player-initial-button-title) {  
+            display: none;  
+            font-size: 1em;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-player-content-wrapper) {  
-  background-color: #555555;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-player-content-wrapper) {  
+            background-color: #555555;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-player-volume-button) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-player-volume-button) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-player-volume-slider) {  
-  --color: #ff2000;  
-  background-color: #555555;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-player-volume-slider) {  
+            --color: #ff2000;  
+            background-color: #555555;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-stream-title) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-stream-title) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-stream-language) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-stream-language) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-player-next-stream-button) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-player-next-stream-button) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-current) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-current) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-bar-wrapper) {  
-  background-color: #bb2222;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-bar-wrapper) {  
+            background-color: #bb2222;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-bar-buffered) {  
-  background-color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-bar-buffered) {  
+            background-color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-bar-current) {  
-  background-color: #ff8888;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-bar-current) {  
+            background-color: #ff8888;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-to-live) {  
-  --color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-to-live) {  
+            --color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-rewind-30s) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-rewind-30s) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-rewind-5s) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-rewind-5s) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-rewind-1s) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-rewind-1s) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-forward-1s) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-forward-1s) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-delay-forward-5s) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-delay-forward-5s) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-play-pause-controls) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-play-pause-controls) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-minimize-player-button) {  
-  color: #ff2000;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-minimize-player-button) {  
+            color: #ff2000;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-spot-overlay) {  
-  color: #ff2000;  
-  background-color: #ffffffaa;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-spot-overlay) {  
+            color: #ff2000;  
+            background-color: #ffffffaa;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-message-info) {  
-  color: #ff2000;  
-  background: white;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-message-info) {  
+            color: #ff2000;  
+            background: white;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-message-danger) {  
-  color: white;  
-  background: darkred;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-message-danger) {  
+            color: white;  
+            background: darkred;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-loading-wrapper) {  
-  background: #ffffffaa;  
-}  
+        mycrocast-sticky-footer-player::part(mcc-loading-wrapper) {  
+            background: #ffffffaa;  
+        }  
   
-mycrocast-sticky-footer-player::part(mcc-loading-animation) {  
-  --color: #ff2000;  
-}
+        mycrocast-sticky-footer-player::part(mcc-loading-animation) {  
+            --color: #ff2000;  
+        }
     </style>
 </body>
 </html>
