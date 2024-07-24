@@ -155,7 +155,9 @@ mycrocast-sticky-footer-player::part(mcc-player-volume-slider) {
 ```
 
 Result:
+
 ![image](https://github.com/user-attachments/assets/512604aa-7605-4ca0-9b4d-4f7569470ead)
+
 &nbsp;
 
 ### mcc-stream-language
@@ -167,6 +169,13 @@ mycrocast-sticky-footer-player::part(mcc-stream-language) {
     display: none;
 }
 ```
+
+Result:
+
+![image](https://github.com/user-attachments/assets/4f9f65bd-7e73-4791-8543-ced101affcfc)
+
+&nbsp;
+
 ### mcc-stream-title
 Adjusts the properties of the stream title, shown after the stream language.
 
@@ -195,6 +204,7 @@ mycrocast-sticky-footer-player::part(mcc-player-next-stream-button) {
 Result:
 
 ![image](https://github.com/user-attachments/assets/f73053c6-1ca7-4101-bba4-62d0402f51ce)
+
 &nbsp;
 
 ### mcc-delay-current
