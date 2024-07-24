@@ -5,18 +5,18 @@ You can make adjustments to parts of the webplayer using CSS. The styles can be 
 
 ### Adjustment of colors using CSS variables
 
-The following CSS variables can only be used to adjust the colors of the web player. Standard CSS colors, but also hexadecimal codes and RGBA colors can be used as colors. The following variables are defined:
+The following CSS variables can only be used to adjust the colors of the webplayer. Standard CSS colors, but also hexadecimal codes and RGBA colors can be used as colors. The following variables are defined:
 
-|Variable|Explanation|
-|----|----|
-| mcc-player-background-color | Adjusts the background color of the button and the stream view. |
-| mcc-player-font-color | Adjusts the font color of the player, including all icons. |
-| mcc-player-overlay-color | Adjusts the background color of the loading overlay and the spot overlay. |
-| mcc-player-overlay-font-color | Adjusts the animation color in the loading overlay and the font color of the spot overlay|
-| mcc-player-button-disabled-color | Adjusts the color of disabled buttons in the player. |
-| mcc-player-delay-bar-background | Adjusts the background color of the delay bar in the delay menu |
-| mcc-player-delay-bar-buffer | Adjusts the color of the indicator in the delay bar that shows the currently buffered audio data. Also affects the color of the "Live" button. |
-| mcc-player-delay-bar-current | Adjusts the color of the indicator in the delay bar that represents the currently set delay. |
+| Variable                         | Explanation                                                                                       |
+| -------------------------------- | ------------------------------------------------------------------------------------------------- |
+| mcc-player-background-color      | Adjusts the background color of the button and the stream view.                                   |
+| mcc-player-font-color            | Adjusts the font color of the player, including all icons.                                        |
+| mcc-player-overlay-color         | Adjusts the background color of the loading overlay and the spot overlay.                         |
+| mcc-player-overlay-font-color    | Adjusts the animation color in the loading overlay and the font color of the spot overlay         |
+| mcc-player-button-disabled-color | Adjusts the color of disabled buttons in the player.                                              |
+| mcc-player-delay-bar-background  | Adjusts the background color of the delay bar.                                                    |
+| mcc-player-delay-bar-buffer      | Adjusts the color of the indicator in the delay bar that shows the currently buffered audio data. |
+| mcc-player-delay-bar-current     | Adjusts the color of the indicator in the delay bar that represents the currently set delay.      |
 
 The CSS style of the website should embed the variables similar to the following example:
 
@@ -52,13 +52,14 @@ mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
 }
 ```
   
-Here, ```mcc-player-initial-button``` can be replaced by one of the class names defined on the following pages in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, ```width```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
+Here, ```mcc-player-initial-button``` can be replaced by one of the class names defined below in order to customize various elements. The examples focus primarily on adjusting the colors of the player, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, ```width```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
 
 #### Responsive styles
 
 In order to render the player correctly on mobile devices, some of the provided CSS shadow parts change their behaviour based on screen size. You can change their behaviour by making use of media queries.
 
 Example:
+
 ```
 @media screen and (max-width: 992px) {
     mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
@@ -68,11 +69,12 @@ Example:
 ```
 
 ### mcc-player-initial-button
-Adjusts the properties of the button shown initially when a stream is available. The class can be used to change its size as well. When the stream title is too long for the button to contain it, it will be cut off and replaced with "..." at the end of the element.
+Adjusts the properties of the button shown initially when a stream is available, containing the title of an available stream. The class can be used to change its size as well. When the stream title is too long for the button to contain it, it will be cut off and replaced with "..." at the end of the element.
 
 Example:
+
 ```
-mycrocast-floating-button-player::part(mcc-player-initial-button) {  
+mycrocast-sticky-footer-player::part(mcc-player-initial-button) {  
     background-color: #555555;
     width: 30rem;
     border: 2px solid #ff2000;
@@ -80,17 +82,22 @@ mycrocast-floating-button-player::part(mcc-player-initial-button) {
 }
 ```
 
-Some properties, like ```padding``` and ```gap```, as well as the mycrocast logo, are scaled automatically by setting the ```font-size``` property. This simplifies the styling process, but you can also override this behavior by setting the properties that are dependent on the ```font-size```.
 
 Result:
 
 ![image](https://github.com/user-attachments/assets/ca0ec548-1e94-4342-84ff-6208b201d421)
 
+&nbsp;
+
+Some properties, like ```padding``` and ```gap```, as well as the mycrocast logo, are scaled automatically by setting the ```font-size``` property. This simplifies the styling process, but you can also override this behavior by setting the properties that are dependent on the ```font-size```.
+
+&nbsp;
 
 ### mcc-player-initial-button-title
 Can be used to additionally style the element containing the stream title within the initial button. Optionally, you can also disable the element so only the mycrocast logo is shown, resulting in less screen space taken by the initial button.
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
     background-color: #555555;
@@ -104,8 +111,10 @@ mycrocast-sticky-footer-player::part(mcc-player-initial-button-title) {
 ```
 
 Result:
+
 ![image](https://github.com/user-attachments/assets/a6ff9271-8ab8-4f66-9c38-4dd7f3ca4829)
 
+&nbsp;
 
 ### mcc-player-content-wrapper
 Adjusts the properties of the stream view after the listener clicked on the initial button. The class can be used to change the dimensions of the stream view as well.
@@ -113,6 +122,7 @@ Adjusts the properties of the stream view after the listener clicked on the init
 When you change the ```padding``` properties of the stream view, keep in mind that the default behaviour changes these properties depending on the screen size. You can overwrite this by using media queries with the according breakpoints at 425px and 1400px screen width.
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-player-content-wrapper) {    
     background-color: #555555;  
@@ -120,6 +130,7 @@ mycrocast-sticky-footer-player::part(mcc-player-content-wrapper) {
 ```
 
 Result:
+
 ![image](https://github.com/user-attachments/assets/1223da39-4399-45d7-89d1-a4bdd6c29cc3)
 
 &nbsp;
@@ -130,6 +141,7 @@ Result:
 Adjusts the properties of the button that opens the volume slider when clicking on it.
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-player-volume-button) {  
     color: #ff2000;  
@@ -137,6 +149,7 @@ mycrocast-sticky-footer-player::part(mcc-player-volume-button) {
 ```
 
 Result:
+
 ![image](https://github.com/user-attachments/assets/28a01d65-88de-4c6e-bd9a-282d209305e8)
 
 &nbsp;
@@ -147,6 +160,7 @@ Result:
 Adjusts the properties of the slider that opens when clicking on the volume button.
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-player-volume-slider) {  
     --color: #ff2000;
@@ -180,6 +194,7 @@ Result:
 Adjusts the properties of the stream title, shown after the stream language.
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-stream-title) {
     color: #ff2000;
@@ -194,6 +209,8 @@ Result:
 ### mcc-next-stream-button
 
 Adjusts the properties of the next-stream button, which is shown when multiple streams are available. This button will move below the stream title and language on screens that are not wider than 992px.
+
+Example:
 
 ```
 mycrocast-sticky-footer-player::part(mcc-player-next-stream-button) {  
@@ -211,6 +228,7 @@ Result:
 Adjusts properties of the element displaying the current delay in seconds besides the delay bar.
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-delay-current) {  
     color: #ff2000;  
@@ -220,23 +238,26 @@ mycrocast-sticky-footer-player::part(mcc-delay-current) {
 Result:
 
 ![image](https://github.com/user-attachments/assets/580d01eb-bbc7-4908-b9a2-7158cb11ae8d)
+
 &nbsp;
 
 ### mcc-delay-bar-wrapper
 
 Affects the delay bar in the delay menu as a whole. Can be used to define the background color and margins/paddings to other elements
+
 &nbsp;
 
 ### mcc-delay-bar-buffered
 
 Adjusts the indicator in the delay bar that shows how much audio data is currently buffered. Behaves similarly to mcc-delay-bar-wrapper
+
 &nbsp;
 
 ### mcc-delay-bar-current
 Adjusts the indicator in the delay bar that shows how long the current delay is. Behaves similarly to mcc-delay-bar-wrapper
-&nbsp;
 
 Example editing all delay-bar-classes:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-delay-bar-wrapper) {
     background-color: #bb2222;
@@ -254,6 +275,7 @@ mycrocast-sticky-footer-player::part(mcc-delay-bar-current) {
 Result:
 
 ![image](https://github.com/user-attachments/assets/66d793bd-79ab-4ccd-95dd-053c4293a1c2)
+
 &nbsp;
 
 ### mcc-delay-to-live
@@ -261,6 +283,7 @@ Result:
 Adjusts the button with the text "Live", which resets the delay to 0. To adjust the color, the variable ```--color``` must be set here!
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-delay-to-live) {
     --color: #ff2000;
@@ -270,13 +293,14 @@ mycrocast-sticky-footer-player::part(mcc-delay-to-live) {
 Result:
 
 ![image](https://github.com/user-attachments/assets/1fbe6565-cab3-4ea9-9a46-0666fd29632e)
-&nbsp;
 
+&nbsp;
 
 ### mcc-delay-rewind-1s
 Adjusts the button that increases the delay by one second. For the other buttons that set the delay, the classes are ```mcc-delay-rewind-5s```, ```mcc-delay-rewind-30s```, ```mcc-delay-forward-5s```, ```mcc-delay-forward-1s```, where "rewind" stands for increasing and "forward" for decreasing the delay.
 
 Example for one of the buttons:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-delay-rewind-1s) {  
     color: #ff2000;  
@@ -286,13 +310,14 @@ mycrocast-sticky-footer-player::part(mcc-delay-rewind-1s) {
 Result:
 
 ![image](https://github.com/user-attachments/assets/1d05f6b1-dc3c-4082-b3f3-110dee2f2ea5)
+
 &nbsp;
 
-
 ### mcc-play-pause-controls
-Changes the properties of the play/pause-button within the stream view.
+Changes the properties of the play/pause-button.
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-play-pause-controls) {  
     color: #ff2000;  
@@ -309,6 +334,7 @@ Result:
 Changes the properties of the close icon on the top right of the stream view.
 
 Example:
+
 ```
 mycrocast-sticky-footer-player::part(mcc-minimize-player-button) {  
     color: #ff2000;  
@@ -319,9 +345,7 @@ Result:
 
 ![image](https://github.com/user-attachments/assets/cbaf1165-8163-4938-ad16-61893097f864)
 
-
 &nbsp;
-
 
 ### mcc-spot-overlay
 Changes the properties of the spot title and the text "to be continued shortly" when a spot is being played.
@@ -373,7 +397,6 @@ Result:
 ![image](https://github.com/user-attachments/assets/943d88ca-e07f-49db-a907-91b17b2bddc0)
 
 &nbsp;
-
 
 ### mcc-loading-wrapper
 
@@ -466,7 +489,7 @@ The following code snippet shows an example HTML page that embeds the player and
 
 <head>
 <meta charset="utf-8">
-<title>WebplayerLiteButton</title>
+<title>WebplayerStickyFooter</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
