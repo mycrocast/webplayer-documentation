@@ -13,14 +13,16 @@ We provide three different players you can choose from.
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/f5157569-2d69-4f74-89ee-d921b4b8d17d)
 &nbsp;
 
-### Webplayer Floating-Button
-
-![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a1469b08-ccec-4c3d-8e8b-98520c400dd8)
-&nbsp;
-
 ### Visual-Impaired Webplayer
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/06ed7946-6b95-415f-b3d5-b1a382c3b9e1)
+&nbsp;
+
+### Webplayer Floating-Button
+
+The Floating-Button webplayer has a fixed position on the screen. It is only shown when there is an active stream, and hidden if there is not.
+
+![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/a1469b08-ccec-4c3d-8e8b-98520c400dd8)
 &nbsp;
 
 ### New-Tab Webplayer
@@ -62,19 +64,19 @@ The following HTML snippets show what the player tags need to look like. They ne
 ```
 &nbsp;
 
-#### Webplayer Floating-Button
-```
-<mycrocast-floating-button-player
-    token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
-</mycrocast-floating-button-player>
-```
-&nbsp;
-
 #### Visual-Impaired Webplayer
 ```
 <mycrocast-vi-player
     token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
 </mycrocast-vi-player>
+```
+&nbsp;
+
+#### Webplayer Floating-Button
+```
+<mycrocast-floating-button-player
+    token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
+</mycrocast-floating-button-player>
 ```
 &nbsp;
 
