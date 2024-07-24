@@ -172,7 +172,7 @@ mycrocast-sticky-footer-player::part(mcc-stream-language) {
 
 Result:
 
-![image](https://github.com/user-attachments/assets/4f9f65bd-7e73-4791-8543-ced101affcfc)
+![image](https://github.com/user-attachments/assets/98704f78-1555-4817-97ef-e94980e9f353)
 
 &nbsp;
 
