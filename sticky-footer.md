@@ -158,8 +158,17 @@ Result:
 ![image](https://github.com/user-attachments/assets/512604aa-7605-4ca0-9b4d-4f7569470ead)
 &nbsp;
 
+### mcc-stream-language
+Adjusts the properties of the stream language, shown besides the volume button. Can be hidden if not required.
+
+```
+mycrocast-sticky-footer-player::part(mcc-stream-language) {  
+    color: #ff2000;  
+    display: none;
+}
+```
 ### mcc-stream-title
-Adjusts the properties of the stream title and the stream language, shown besides the volume button.
+Adjusts the properties of the stream title, shown after the stream language.
 
 Example:
 ```
