@@ -32,11 +32,11 @@ The New-Tab webplayer has a fixed position on the screen. Just like the Floating
 ![image](https://github.com/user-attachments/assets/1f55de9d-e5dd-4f16-91bb-ff3aff1c19af)
 &nbsp;
 
-### Webplayer Floating-Button
+### Webplayer Sticky-Footer
 
-The New-Tab webplayer has a fixed position on the screen. Just like the Floating-Button webplayer, it is only shown when there is an active stream. However, the initial button also contains the stream title here, and when clicking on it, it opens the following stream view at the bottom of the page.
+The Sticky-Footer webplayer has a fixed position on the screen. Just like the Floating-Button webplayer, it is only shown when there is an active stream. However, the initial button also contains the stream title here, and when clicking on it, it opens the following stream view at the bottom of the page.
 
-TODO
+![image](https://github.com/user-attachments/assets/afe0a279-f3dc-4d40-9557-c866c397db05)
 
 &nbsp;
 
