@@ -1,5 +1,5 @@
 # New-Tab-Button Webplayer
-setting the targetURL attribute will open that url in a new tab instead of the default url that links to the [VI-player](https://mycrocast.github.io/webplayer-documentation/vi)
+Setting the targetURL attribute will open that url in a new tab instead of the default url that links to the [VI-player](https://mycrocast.github.io/webplayer-documentation/vi)
 
 ```
 <mycrocast-floating-button-tab-player
