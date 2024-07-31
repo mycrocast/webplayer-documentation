@@ -42,7 +42,7 @@ Not all variables need to be defined.
 A CSS class or a CSS shadow part can be overwritten as follows:
 
 ```
-mycrocast-vi-button-player::part(mcc-vi-player-viewport) {
+mycrocast-vi-player::part(mcc-vi-player-viewport) {
     /* define custom styles here */
 }
 ```
@@ -304,7 +304,7 @@ The following code snippet shows an example HTML page that embeds the player and
 
 <body>
     <mycrocast-vi-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-vi-player>
-    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=VISUALLY_IMPAIRED_PLAYER></script>
+    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=VISUAL_IMPAIRED_PLAYER></script>
     <style>
         mycrocast-vi-player {
             --mcc-player-background-color: #555555;  
@@ -347,7 +347,7 @@ The following code snippet shows an example HTML page that embeds the player and
 
 <body>
     <mycrocast-vi-player token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999"></mycrocast-vi-player>
-    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=VISUALLY_IMPAIRED_PLAYER></script>
+    <script id="mycrocast_base" src="https://mycrocast-webplayer.s3.eu-central-1.amazonaws.com/versioning-main.js" player=VISUAL_IMPAIRED_PLAYER></script>
     <style>
         mycrocast-vi-player::part(mcc-vi-player-viewport) {  
             background-color: #555555;  
