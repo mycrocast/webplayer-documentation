@@ -13,7 +13,7 @@ We provide three different players you can choose from.
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/f5157569-2d69-4f74-89ee-d921b4b8d17d)
 &nbsp;
 
-### Visual-Impaired Webplayer
+### Visually-Impaired Webplayer
 
 ![image](https://github.com/mycrocast/webplayer-documentation/assets/82024455/06ed7946-6b95-415f-b3d5-b1a382c3b9e1)
 &nbsp;
@@ -57,7 +57,7 @@ The following script needs to be copied and inserted anywhere within the ```<bod
 |-----|-----|
 | Webplayer Lite | LITE_PLAYER |
 | Webplayer Floating-Button | FLOATING_BUTTON_PLAYER |
-| Visual-Impaired Webplayer | VISUAL_IMPAIRED_PLAYER |
+| Visually-Impaired Webplayer | VISUAL_IMPAIRED_PLAYER |
 | New-Tab Webplayer | FLOATING_BUTTON_TAB_PLAYER |
 | Sticky-Footer Webplayer | STICKY_FOOTER_PLAYER |
 
@@ -75,7 +75,7 @@ The following HTML snippets show what the player tags need to look like. They ne
 ```
 &nbsp;
 
-#### Visual-Impaired Webplayer
+#### Visually-Impaired Webplayer
 ```
 <mycrocast-vi-player
     token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
@@ -126,7 +126,8 @@ We provide means to customize the webplayer to your needs. Since the elements an
 
 1. [Webplayer Lite](https://mycrocast.github.io/webplayer-documentation/lite)
 2. [Floating-Button Webplayer](https://mycrocast.github.io/webplayer-documentation/floating)
-3. [New-Tab Webplayer](https://mycrocast.github.io/webplayer-documentation/new-tab)
-4. [Sticky-Footer Webplayer](https://mycrocast.github.io/webplayer-documentation/sticky-footer)
+3. [Visually-Impaired Webplayer](https://mycrocast.github.io/webplayer-documentation/vi)
+4. [New-Tab Webplayer](https://mycrocast.github.io/webplayer-documentation/new-tab)
+5. [Sticky-Footer Webplayer](https://mycrocast.github.io/webplayer-documentation/sticky-footer)
 
 
