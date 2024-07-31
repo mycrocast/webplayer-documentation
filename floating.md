@@ -42,7 +42,7 @@ mcc-floating-button-player::part(mcc-player-initial-button) {
 }
 ```
   
-Here, ```mcc-player-initial-button``` can be replaced by one of the class names defined on the following pages in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, ```width```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
+Here, ```mcc-player-initial-button``` can be replaced by one of the class names defined below in order to customize various elements. The examples focus primarily on adjusting the colors, but any other CSS properties such as ```margin```, ```padding```, ```display```, ```position```, ```width```, etc. can be defined for each class as required. Icons are interpreted as characters and can therefore be customized via ```font-size```, ```color```, etc.
 
 ### mcc-player-initial-button
 Adjusts the properties of the button shown initially when a stream is available. The class can be used to change its size as well.
