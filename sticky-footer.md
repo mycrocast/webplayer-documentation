@@ -116,6 +116,28 @@ Result:
 
 &nbsp;
 
+### mcc-player-initial-button-live-dot
+Can be used to additionally style the element containing the live dot and the corresponding pulse animation. This element scales with the font size. You can optionally disable the element when you do not require it.
+
+Example:
+```
+mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
+    background-color: #555555;
+    border: 2px solid #ff2000;
+    font-size: 3em;
+}
+
+mycrocast-sticky-footer-player::part(mcc-player-initial-button-live-dot) {  
+  --color: #ff2000;  
+}
+```
+
+Result:
+
+TODO
+
+&nbsp;
+
 ### mcc-player-content-wrapper
 Adjusts the properties of the stream view after the listener clicked on the initial button. The class can be used to change the dimensions of the stream view as well.
 
@@ -171,22 +193,6 @@ mycrocast-sticky-footer-player::part(mcc-player-volume-slider) {
 Result:
 
 ![image](https://github.com/user-attachments/assets/512604aa-7605-4ca0-9b4d-4f7569470ead)
-
-&nbsp;
-
-### mcc-stream-language
-Adjusts the properties of the stream language, shown besides the volume button. Can be hidden if not required.
-
-```
-mycrocast-sticky-footer-player::part(mcc-stream-language) {  
-    color: #ff2000;  
-    display: none;
-}
-```
-
-Result:
-
-![image](https://github.com/user-attachments/assets/98704f78-1555-4817-97ef-e94980e9f353)
 
 &nbsp;
 
