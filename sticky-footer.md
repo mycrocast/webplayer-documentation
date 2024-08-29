@@ -125,6 +125,7 @@ mycrocast-sticky-footer-player::part(mcc-player-initial-button) {
     background-color: #555555;
     border: 2px solid #ff2000;
     font-size: 3em;
+    width: 30rem;
 }
 
 mycrocast-sticky-footer-player::part(mcc-player-initial-button-live-dot) {  
@@ -134,7 +135,7 @@ mycrocast-sticky-footer-player::part(mcc-player-initial-button-live-dot) {
 
 Result:
 
-TODO
+![image](https://github.com/user-attachments/assets/561e290f-3d32-46e7-b530-5ecdceecab9c)
 
 &nbsp;
 
