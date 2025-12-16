@@ -40,6 +40,12 @@ The Sticky-Footer webplayer has a fixed position on the screen. Just like the Fl
 
 &nbsp;
 
+### Webplayer Card
+
+![image](https://github.com/user-attachments/assets/51706c94-c2a8-4675-aa91-ea618ccc3b15)
+
+&nbsp;
+
 ## Embed Script
 
 The following script needs to be copied and inserted anywhere within the ```<body>``` of your website. Please replace the ```LITE_PLAYER``` tag in the ```player=LITE_PLAYER``` attribute with the tag according to your player from the list below.
@@ -60,6 +66,7 @@ The following script needs to be copied and inserted anywhere within the ```<bod
 | Visually-Impaired Webplayer | VISUAL_IMPAIRED_PLAYER |
 | New-Tab Webplayer | FLOATING_BUTTON_TAB_PLAYER |
 | Sticky-Footer Webplayer | STICKY_FOOTER_PLAYER |
+| Card Webplayer | CARD_PLAYER |
 
 ## Embed Webplayer
 
@@ -107,6 +114,14 @@ The following HTML snippets show what the player tags need to look like. They ne
 ```
 &nbsp;
 
+#### Webplayer Card
+```
+<mycrocast-card-player
+token="1567504890375_8741a554-c25e-428f-a807-a69bac373315-9999">
+</mycrocast-card-player>
+```
+&nbsp;
+
 ### Obtaining the club token from the mycrocast platform
 
 1. Log in with your club account.
@@ -129,5 +144,6 @@ We provide means to customize the webplayer to your needs. Since the elements an
 3. [Visually-Impaired Webplayer](https://mycrocast.github.io/webplayer-documentation/vi)
 4. [New-Tab Webplayer](https://mycrocast.github.io/webplayer-documentation/new-tab)
 5. [Sticky-Footer Webplayer](https://mycrocast.github.io/webplayer-documentation/sticky-footer)
+6. [Card Webplayer](https://mycrocast.github.io/webplayer-documentation/card)
 
 
